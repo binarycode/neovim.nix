@@ -53,5 +53,33 @@ inputs: { config, lib, pkgs, ... }: {
         packages.neovim-plugins.start = config.neovimPlugins;
       };
     };
+
+    environment.systemPackages = let
+      neomin = pkgs.wrapNeovim pkgs.neovim-unwrapped {
+        configure = {
+          customRC = ''
+            " move to char
+            map  <Leader>f :HopChar1<CR>
+            nmap <Leader>f :HopChar1<CR>
+
+            " move to word
+            map  <Leader>w :HopWord<CR>
+            nmap <Leader>w :HopWord<CR>
+
+            " move to line
+            map  <Leader>l :HopLine<CR>
+            nmap <Leader>l :HopLine<CR>
+
+            " required for default hint colors to be set up
+            lua require'hop'.setup { }
+          '';
+          packages.neomin-plugins.start = [ pkgs.vimPlugins.hop-nvim ];
+        };
+      };
+    in [
+      (pkgs.writeShellScriptBin "neomin" ''
+        exec -a "$0" "${neomin}/bin/nvim" "$@"
+      '')
+    ];
   };
 }

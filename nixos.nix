@@ -58,6 +58,25 @@ inputs: { config, lib, pkgs, ... }: {
       neomin = pkgs.wrapNeovim pkgs.neovim-unwrapped {
         configure = {
           customRC = ''
+            " use spacebar as Leader
+            let mapleader = "\<Space>"
+
+            " use clipboard for all operations
+            set clipboard+=unnamedplus
+
+            " hide line numbers
+            set nonumber
+
+            " do not set cursor line on center
+            set so=0
+
+            " minimal stuff
+            set noshowmode
+            set noruler
+            set laststatus=0
+            set noshowcmd
+            set shortmess+=F
+
             " move to char
             map  <Leader>f :HopChar1<CR>
             nmap <Leader>f :HopChar1<CR>
@@ -77,7 +96,7 @@ inputs: { config, lib, pkgs, ... }: {
         };
       };
     in [
-      (pkgs.writeShellScriptBin "neomin" ''
+      (pkgs.writeShellScriptBin "nmin" ''
         exec -a "$0" "${neomin}/bin/nvim" "$@"
       '')
     ];

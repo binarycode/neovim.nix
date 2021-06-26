@@ -1,5 +1,5 @@
 {
-  neovimRC = [
+  my.neovimRC = [
     ''
       " arrow navigation between splits
       nnoremap <Up>    <c-w>k

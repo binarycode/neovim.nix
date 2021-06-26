@@ -91,6 +91,9 @@ inputs: { config, lib, pkgs, ... }: {
 
             " required for default hint colors to be set up
             lua require'hop'.setup { }
+
+            " double escape to exit
+            map <Esc><Esc> :qall!<CR>
           '';
           packages.neomin-plugins.start = [ pkgs.vimPlugins.hop-nvim ];
         };

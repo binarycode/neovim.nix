@@ -2,5 +2,9 @@
   # https://github.com/tpope/vim-unimpaired
   # useful shortcuts
 
-  neovimPlugins = [ pkgs.vimPlugins.vim-unimpaired ];
+  my = {
+    neovimPlugins = [ pkgs.vimPlugins.vim-unimpaired ];
+
+    neominPlugins = [ pkgs.vimPlugins.vim-unimpaired ];
+  };
 }

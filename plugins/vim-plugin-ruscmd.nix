@@ -3,7 +3,7 @@
   # command mode with russian keyboard layout
   # TODO: add to nixpkgs?
 
-  neovimPlugins = [
+  my.neovimPlugins = [
     (pkgs.vimUtils.buildVimPluginFrom2Nix {
       pname = "vim-plugin-ruscmd";
       version = "2015-03-30";

@@ -2,7 +2,7 @@
   # https://github.com/sirtaj/vim-openscad
   # syntax highlighting for openscad (.scad) files
 
-  neovimPlugins = [
+  my.neovimPlugins = [
     (pkgs.vimUtils.buildVimPluginFrom2Nix {
       pname = "vim-openscad";
       version = "2020-07-08";

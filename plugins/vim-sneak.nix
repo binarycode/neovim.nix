@@ -3,5 +3,9 @@
   # 2-char repeatable jumps
   # TODO: comma (jump back) is not working for some reason, why?
 
-  neovimPlugins = [ pkgs.vimPlugins.vim-sneak ];
+  my = {
+    neovimPlugins = [ pkgs.vimPlugins.vim-sneak ];
+
+    neominPlugins = [ pkgs.vimPlugins.vim-sneak ];
+  };
 }

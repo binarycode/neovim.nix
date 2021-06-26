@@ -2,5 +2,5 @@
   # https://github.com/tpope/vim-fugitive
   # git wrapper
 
-  neovimPlugins = [ pkgs.vimPlugins.vim-fugitive ];
+  my.neovimPlugins = [ pkgs.vimPlugins.vim-fugitive ];
 }

@@ -29,11 +29,17 @@ inputs: { config, lib, pkgs, ... }: {
     ./plugins/vim-unimpaired.nix
   ];
 
-  options = {
+  options.my = {
     neovimRC = lib.mkOption {
       type = lib.types.listOf lib.types.str;
     };
     neovimPlugins = lib.mkOption {
+      type = lib.types.listOf lib.types.package;
+    };
+    neominRC = lib.mkOption {
+      type = lib.types.listOf lib.types.str;
+    };
+    neominPlugins = lib.mkOption {
       type = lib.types.listOf lib.types.package;
     };
   };
@@ -49,53 +55,16 @@ inputs: { config, lib, pkgs, ... }: {
       vimAlias = true;
 
       configure = {
-        customRC = lib.concatMapStrings (rc: "\n${rc}\n") (lib.reverseList config.neovimRC);
-        packages.neovim-plugins.start = config.neovimPlugins;
+        customRC = lib.concatMapStrings (rc: "\n${rc}\n") (lib.reverseList config.my.neovimRC);
+        packages.neovim-plugins.start = config.my.neovimPlugins;
       };
     };
 
     environment.systemPackages = let
       neomin = pkgs.wrapNeovim pkgs.neovim-unwrapped {
         configure = {
-          customRC = ''
-            " use spacebar as Leader
-            let mapleader = "\<Space>"
-
-            " use clipboard for all operations
-            set clipboard+=unnamedplus
-
-            " hide line numbers
-            set nonumber
-
-            " do not set cursor line on center
-            set so=0
-
-            " minimal stuff
-            set noshowmode
-            set noruler
-            set laststatus=0
-            set noshowcmd
-            set shortmess+=F
-
-            " move to char
-            map  <Leader>f :HopChar1<CR>
-            nmap <Leader>f :HopChar1<CR>
-
-            " move to word
-            map  <Leader>w :HopWord<CR>
-            nmap <Leader>w :HopWord<CR>
-
-            " move to line
-            map  <Leader>l :HopLine<CR>
-            nmap <Leader>l :HopLine<CR>
-
-            " required for default hint colors to be set up
-            lua require'hop'.setup { }
-
-            " double escape to exit
-            map <Esc><Esc> :qall!<CR>
-          '';
-          packages.neomin-plugins.start = [ pkgs.vimPlugins.hop-nvim ];
+          customRC = lib.concatMapStrings (rc: "\n${rc}\n") (lib.reverseList config.my.neominRC);
+          packages.neomin-plugins.start = config.my.neominPlugins;
         };
       };
     in [

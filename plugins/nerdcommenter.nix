@@ -2,5 +2,5 @@
   # https://github.com/preservim/nerdcommenter
   # commenting shortcuts
 
-  neovimPlugins = [ pkgs.vimPlugins.nerdcommenter ];
+  my.neovimPlugins = [ pkgs.vimPlugins.nerdcommenter ];
 }

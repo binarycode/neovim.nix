@@ -2,5 +2,5 @@
   # https://github.com/sheerun/vim-polyglot
   # collection of language packs
 
-  neovimPlugins = [ pkgs.vimPlugins.vim-polyglot ];
+  my.neovimPlugins = [ pkgs.vimPlugins.vim-polyglot ];
 }

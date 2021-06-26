@@ -2,5 +2,5 @@
   # https://github.com/kchmck/vim-coffee-script
   # coffeescript support
 
-  neovimPlugins = [ pkgs.vimPlugins.vim-coffee-script ];
+  my.neovimPlugins = [ pkgs.vimPlugins.vim-coffee-script ];
 }

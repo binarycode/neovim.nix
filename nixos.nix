@@ -5,6 +5,19 @@ inputs: { config, lib, pkgs, ... }: {
     ./config/base.nix
     ./config/experimental.nix
 
+    # TODO: https://github.com/ggandor/lightspeed.nvim
+    # TODO: https://github.com/kevinhwang91/nvim-bqf
+    # TODO: https://github.com/Iron-E/nvim-highlite
+    # TODO: https://github.com/kevinhwang91/nvim-hlslens
+    # TODO: https://github.com/kyazdani42/nvim-tree.lua
+    # TODO: https://github.com/sunjon/Shade.nvim
+    # TODO: https://github.com/romgrk/barbar.nvim
+    # TODO: https://github.com/glepnir/dashboard-nvim
+    # TODO: https://github.com/Shougo/defx.nvim
+    # TODO: https://github.com/glepnir/galaxyline.nvim
+    # TODO: https://github.com/lewis6991/gitsigns.nvim
+    # TODO: https://github.com/lukas-reineke/indent-blankline.nvim
+    # TODO: https://github.com/jeffkreeftmeijer/neovim-sensible
     ./plugins/editorconfig-vim.nix
     ./plugins/hop-nvim.nix
     ./plugins/lightline-vim.nix

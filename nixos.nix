@@ -5,7 +5,6 @@ inputs: { config, lib, pkgs, ... }: {
     ./config/base.nix
     ./config/experimental.nix
 
-    # TODO: https://github.com/ggandor/lightspeed.nvim
     # TODO: https://github.com/kevinhwang91/nvim-bqf
     # TODO: https://github.com/Iron-E/nvim-highlite
     # TODO: https://github.com/kevinhwang91/nvim-hlslens
@@ -19,10 +18,11 @@ inputs: { config, lib, pkgs, ... }: {
     # TODO: https://github.com/lukas-reineke/indent-blankline.nvim
     # TODO: https://github.com/jeffkreeftmeijer/neovim-sensible
     ./plugins/editorconfig-vim.nix
-    ./plugins/hop-nvim.nix
+    #./plugins/hop-nvim.nix
     ./plugins/lightline-vim.nix
+    ./plugins/lightspeed-nvim.nix
     ./plugins/nerdcommenter.nix
-    ./plugins/quick-scope.nix
+    #./plugins/quick-scope.nix
     ./plugins/supertab.nix
     ./plugins/syntastic.nix
     ./plugins/telescope-nvim.nix
@@ -37,7 +37,7 @@ inputs: { config, lib, pkgs, ... }: {
     ./plugins/vim-plugin-ruscmd.nix
     ./plugins/vim-polyglot.nix
     ./plugins/vim-rooter.nix
-    ./plugins/vim-sneak.nix
+    #./plugins/vim-sneak.nix
     ./plugins/vim-surround.nix
     ./plugins/vim-unimpaired.nix
   ];

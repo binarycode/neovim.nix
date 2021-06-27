@@ -23,7 +23,7 @@
           owner = "tobiwild";
           repo = "vim-filebeagle";
           rev = "2b9ab186c486c98896bc3fb178867b6603d75fb1";
-          sha256 = "1pw9qwcs69ff4cmgmjjflh2vprp6kz7whs3x7xhhi476mi7bzh49";
+          sha256 = "022pglmwi46ry0ilisxazb87diygyx8fnbfz4iadqnivixz44d3r";
         };
       })
     ];

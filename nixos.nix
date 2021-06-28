@@ -5,6 +5,7 @@ inputs: { config, lib, pkgs, ... }: {
     ./config/base.nix
     ./config/experimental.nix
 
+    # TODO: https://github.com/wellle/targets.vim
     # TODO: https://github.com/kevinhwang91/nvim-bqf
     # TODO: https://github.com/Iron-E/nvim-highlite
     # TODO: https://github.com/kevinhwang91/nvim-hlslens
@@ -18,7 +19,7 @@ inputs: { config, lib, pkgs, ... }: {
     # TODO: https://github.com/lukas-reineke/indent-blankline.nvim
     # TODO: https://github.com/jeffkreeftmeijer/neovim-sensible
     ./plugins/editorconfig-vim.nix
-    #./plugins/hop-nvim.nix
+    ./plugins/hop-nvim.nix
     ./plugins/lightline-vim.nix
     ./plugins/lightspeed-nvim.nix
     ./plugins/nerdcommenter.nix

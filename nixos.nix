@@ -1,6 +1,6 @@
 inputs: { config, lib, pkgs, ... }: {
   imports = [
-    ./plugins/molokai.nix # colorsheme should be first
+    ./plugins/colorscheme.nix # colorsheme should be first
 
     ./config/base.nix
     ./config/experimental.nix
@@ -23,6 +23,7 @@ inputs: { config, lib, pkgs, ... }: {
     ./plugins/lightline-vim.nix
     ./plugins/lightspeed-nvim.nix
     ./plugins/nerdcommenter.nix
+    ./plugins/nvim-treesitter.nix
     #./plugins/quick-scope.nix
     ./plugins/supertab.nix
     ./plugins/syntastic.nix

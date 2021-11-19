@@ -1,7 +1,18 @@
 { pkgs, ... }: {
   my = {
-    neovimRC = [ "set termguicolors" ];
+    neovimRC = [
+      ''
+        if has('termguicolors')
+          set termguicolors
+        endif
+
+        colorscheme molokai
+      ''
+    ];
+
     neovimPlugins = [
+      pkgs.vimPlugins.molokai # https://github.com/tomasr/molokai
+
       pkgs.vimPlugins.neon # https://github.com/rafamadriz/neon
       pkgs.vimPlugins.vim-code-dark # https://github.com/tomasiser/vim-code-dark
       pkgs.vimPlugins.nvcode-color-schemes-vim # https://github.com/ChristianChiarulli/nvcode-color-schemes.vim

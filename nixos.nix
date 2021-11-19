@@ -1,7 +1,6 @@
 inputs: { config, lib, pkgs, ... }: {
   imports = [
-    ./plugins/molokai.nix # colorsheme should be first
-    ./plugins/extra-themes.nix
+    ./plugins/colorscheme.nix # colorsheme should be first
 
     ./config/base.nix
     ./config/experimental.nix

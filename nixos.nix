@@ -86,6 +86,8 @@ inputs: { config, lib, pkgs, ... }: {
       (pkgs.writeShellScriptBin "nmin" ''
         exec -a "$0" "${neomin}/bin/nvim" "$@"
       '')
+
+      pkgs.xsel # X11 clipboard integration
     ];
   };
 }

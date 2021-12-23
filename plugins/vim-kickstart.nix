@@ -9,7 +9,7 @@
         version = "2018-03-29";
         src = pkgs.fetchFromGitHub {
           owner = "tangledhelix";
-          repo = "kickstart.vim";
+          repo = "vim-kickstart";
           rev = "da484930941fcd1ff2215bc7d5f1568bef6fda7f";
           sha256 = "0000000000000000000000000000000000000000000000000000";
         };

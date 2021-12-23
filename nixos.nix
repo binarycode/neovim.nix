@@ -35,6 +35,7 @@ inputs: { config, lib, pkgs, ... }: {
     ./plugins/vim-filebeagle.nix # TODO: try to replace with something modern to get rid of relpath issue
     ./plugins/vim-fugitive.nix
     ./plugins/vim-grepper.nix
+    ./plugins/vim-kickstart.nix
     ./plugins/vim-openscad.nix
     ./plugins/vim-plugin-ruscmd.nix
     ./plugins/vim-polyglot.nix

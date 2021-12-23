@@ -11,7 +11,7 @@
           owner = "tangledhelix";
           repo = "vim-kickstart";
           rev = "da484930941fcd1ff2215bc7d5f1568bef6fda7f";
-          sha256 = "0000000000000000000000000000000000000000000000000000";
+          sha256 = "sha256-o3XSXSE0gzSgX6wyjwMPmNTGPnZJMRm2cnVEJtF6Gxs=";
         };
       })
     ];

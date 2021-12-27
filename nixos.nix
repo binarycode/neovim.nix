@@ -23,7 +23,7 @@ inputs: { config, lib, pkgs, ... }: {
     ./plugins/lightline-vim.nix
     ./plugins/lightspeed-nvim.nix
     ./plugins/nerdcommenter.nix
-    ./plugins/nvim-treesitter.nix
+    #./plugins/nvim-treesitter.nix
     #./plugins/quick-scope.nix
     ./plugins/supertab.nix
     ./plugins/syntastic.nix

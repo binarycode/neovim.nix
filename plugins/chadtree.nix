@@ -6,7 +6,7 @@
     (pkgs.vimPlugins.chadtree.overrideAttrs (_: {
       buildInputs = [ pkgs.python3 ];
       buildPhase = ''
-        python3 -m chadtree deps --nvim
+        python3 -m chadtree deps --nvim --xdg
       '';
     }))
   ];

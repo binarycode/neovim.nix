@@ -18,6 +18,7 @@ inputs: { config, lib, pkgs, ... }: {
     # TODO: https://github.com/lewis6991/gitsigns.nvim
     # TODO: https://github.com/lukas-reineke/indent-blankline.nvim
     # TODO: https://github.com/jeffkreeftmeijer/neovim-sensible
+    ./plugins/chadtree.nix
     ./plugins/editorconfig-vim.nix
     ./plugins/hop-nvim.nix
     ./plugins/lightline-vim.nix

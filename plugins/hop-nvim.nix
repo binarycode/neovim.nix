@@ -6,7 +6,7 @@
       owner = "phaazon";
       repo = "hop.nvim";
       rev = "f418a3750ed3a7f321287a39d2c9a56d8ad630aa";
-      sha256 = "sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=";
+      sha256 = "sha256-iVNCco/QMqsyJFgx9uog2+7Y0P+CQBxsf0wAruxiukY=";
     };
   };
 in {

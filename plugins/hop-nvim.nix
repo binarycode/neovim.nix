@@ -1,4 +1,15 @@
-{ pkgs, ... }: {
+{ pkgs, ... }: let
+  hop-nvim = pkgs.vimUtils.buildVimPluginFrom2Nix {
+    pname = "hop.nvim";
+    version = "2022-01-12";
+    src = pkgs.fetchFromGitHub {
+      owner = "phaazon";
+      repo = "hop.nvim";
+      rev = "f418a3750ed3a7f321287a39d2c9a56d8ad630aa";
+      sha256 = "2zwjqg6zzs0y7ki63brsxf2k64xv4nld8jrixw0naajn4pip43r3";
+    };
+  };
+in {
   # https://github.com/phaazon/hop.nvim
   # jump to any word, symbol or line with just a few keystrokes
 
@@ -24,7 +35,7 @@
         lua require'hop'.setup { }
       ''
     ];
-    neovimPlugins = [ pkgs.vimPlugins.hop-nvim ];
+    neovimPlugins = [ hop-nvim ];
 
     neominRC = [
       ''
@@ -47,6 +58,6 @@
         lua require'hop'.setup { }
       ''
     ];
-    neominPlugins = [ pkgs.vimPlugins.hop-nvim ];
+    neominPlugins = [ hop-nvim ];
   };
 }

@@ -26,7 +26,6 @@
       pkgs.vimPlugins.falcon # https://github.com/fenetikm/falcon
       pkgs.vimPlugins.nord-nvim # https://github.com/shaunsingh/nord.nvim
       pkgs.vimPlugins.nvim-solarized-lua # https://github.com/ishan9299/nvim-solarized-lua
-      pkgs.vimPlugins.moonlight-nvim # https://github.com/shaunsingh/moonlight.nvim
       pkgs.vimPlugins.onedark-vim
       pkgs.vimPlugins.onedarkpro-nvim # https://github.com/olimorris/onedarkpro.nvim
       pkgs.vimPlugins.gruvbox-material # https://github.com/sainnhe/gruvbox-material

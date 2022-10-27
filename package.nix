@@ -4,6 +4,7 @@
 
     (import ./config-base)
     (import ./config-experimental)
+    (import ./config-filetypes)
 
     (import ./ale)
     (import ./editorconfig-vim)

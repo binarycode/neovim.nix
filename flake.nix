@@ -10,9 +10,7 @@
         flake-utils.follows = "flake-utils";
         nixpkgs.follows     = "nixpkgs";
       };
-      # TODO: master branch breaks vim-polyglot plugin
-      #url = github:neovim/neovim?dir=contrib;
-      url = github:neovim/neovim?dir=contrib&rev=ffa1335047047ac00280ac742bcc6dfcc7fa3589;
+      url = github:neovim/neovim?dir=contrib;
     };
     neovim-nightly-overlay = {
       inputs = {

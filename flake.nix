@@ -36,13 +36,13 @@
       flake = false;
       url = github:phaazon/hop.nvim;
     };
+    "neovim-plugin:leap.nvim" = {
+      flake = false;
+      url = github:ggandor/leap.nvim;
+    };
     "neovim-plugin:lightline.vim" = {
       flake = false;
       url = github:itchyny/lightline.vim;
-    };
-    "neovim-plugin:lightspeed.nvim" = {
-      flake = false;
-      url = github:ggandor/lightspeed.nvim;
     };
     "neovim-plugin:nerdcommenter" = {
       flake = false;

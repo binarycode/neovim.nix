@@ -146,6 +146,22 @@
         "type": "github"
       }
     },
+    "neovim-plugin:leap.nvim": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1678823512,
+        "narHash": "sha256-bzmsib8Qr2Whu1FqHzvrsIfSKf/CFutsaM3Sz8gaTLo=",
+        "owner": "ggandor",
+        "repo": "leap.nvim",
+        "rev": "f74473d23ebf60957e0db3ff8172349a82e5a442",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ggandor",
+        "repo": "leap.nvim",
+        "type": "github"
+      }
+    },
     "neovim-plugin:lightline.vim": {
       "flake": false,
       "locked": {
@@ -159,22 +175,6 @@
       "original": {
         "owner": "itchyny",
         "repo": "lightline.vim",
-        "type": "github"
-      }
-    },
-    "neovim-plugin:lightspeed.nvim": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1666361611,
-        "narHash": "sha256-P8j8SY6Cvv7zAXfAP3IY7CYj6RC8k+hV3SUbJy69J5k=",
-        "owner": "ggandor",
-        "repo": "lightspeed.nvim",
-        "rev": "299eefa6a9e2d881f1194587c573dad619fdb96f",
-        "type": "github"
-      },
-      "original": {
-        "owner": "ggandor",
-        "repo": "lightspeed.nvim",
         "type": "github"
       }
     },
@@ -556,8 +556,8 @@
         "neovim-plugin:editorconfig-vim": "neovim-plugin:editorconfig-vim",
         "neovim-plugin:gitsigns.nvim": "neovim-plugin:gitsigns.nvim",
         "neovim-plugin:hop.nvim": "neovim-plugin:hop.nvim",
+        "neovim-plugin:leap.nvim": "neovim-plugin:leap.nvim",
         "neovim-plugin:lightline.vim": "neovim-plugin:lightline.vim",
-        "neovim-plugin:lightspeed.nvim": "neovim-plugin:lightspeed.nvim",
         "neovim-plugin:molokai": "neovim-plugin:molokai",
         "neovim-plugin:nerdcommenter": "neovim-plugin:nerdcommenter",
         "neovim-plugin:nvim-hlslens": "neovim-plugin:nvim-hlslens",

@@ -2,8 +2,8 @@
 {
   config = builtins.readFile ./config.vim;
   plugins = [
-    "plenary.nvim"
-    "popup.nvim"
-    "telescope.nvim"
+    "plenary_nvim"
+    "popup_nvim"
+    "telescope_nvim"
   ];
 }

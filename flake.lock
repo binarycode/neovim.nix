@@ -82,7 +82,7 @@
         "type": "github"
       }
     },
-    "neovim-plugin:ale": {
+    "neovim-plugin__ale": {
       "flake": false,
       "locked": {
         "lastModified": 1670640710,
@@ -98,7 +98,7 @@
         "type": "github"
       }
     },
-    "neovim-plugin:editorconfig-vim": {
+    "neovim-plugin__editorconfig-vim": {
       "flake": false,
       "locked": {
         "lastModified": 1668281899,
@@ -114,7 +114,7 @@
         "type": "github"
       }
     },
-    "neovim-plugin:gitsigns.nvim": {
+    "neovim-plugin__gitsigns_nvim": {
       "flake": false,
       "locked": {
         "lastModified": 1669826718,
@@ -130,7 +130,7 @@
         "type": "github"
       }
     },
-    "neovim-plugin:hop.nvim": {
+    "neovim-plugin__hop_nvim": {
       "flake": false,
       "locked": {
         "lastModified": 1667151642,
@@ -146,7 +146,7 @@
         "type": "github"
       }
     },
-    "neovim-plugin:leap.nvim": {
+    "neovim-plugin__leap_nvim": {
       "flake": false,
       "locked": {
         "lastModified": 1678823512,
@@ -162,7 +162,7 @@
         "type": "github"
       }
     },
-    "neovim-plugin:lightline.vim": {
+    "neovim-plugin__lightline_vim": {
       "flake": false,
       "locked": {
         "lastModified": 1664979337,
@@ -178,7 +178,7 @@
         "type": "github"
       }
     },
-    "neovim-plugin:molokai": {
+    "neovim-plugin__molokai": {
       "flake": false,
       "locked": {
         "lastModified": 1447244265,
@@ -194,7 +194,7 @@
         "type": "github"
       }
     },
-    "neovim-plugin:nerdcommenter": {
+    "neovim-plugin__nerdcommenter": {
       "flake": false,
       "locked": {
         "lastModified": 1667987112,
@@ -210,7 +210,7 @@
         "type": "github"
       }
     },
-    "neovim-plugin:nvim-hlslens": {
+    "neovim-plugin__nvim-hlslens": {
       "flake": false,
       "locked": {
         "lastModified": 1670142392,
@@ -226,7 +226,7 @@
         "type": "github"
       }
     },
-    "neovim-plugin:plenary.nvim": {
+    "neovim-plugin__plenary_nvim": {
       "flake": false,
       "locked": {
         "lastModified": 1664607953,
@@ -242,7 +242,7 @@
         "type": "github"
       }
     },
-    "neovim-plugin:popup.nvim": {
+    "neovim-plugin__popup_nvim": {
       "flake": false,
       "locked": {
         "lastModified": 1637254091,
@@ -258,7 +258,7 @@
         "type": "github"
       }
     },
-    "neovim-plugin:supertab": {
+    "neovim-plugin__supertab": {
       "flake": false,
       "locked": {
         "lastModified": 1619805387,
@@ -274,7 +274,7 @@
         "type": "github"
       }
     },
-    "neovim-plugin:telescope.nvim": {
+    "neovim-plugin__telescope_nvim": {
       "flake": false,
       "locked": {
         "lastModified": 1669979094,
@@ -290,7 +290,7 @@
         "type": "github"
       }
     },
-    "neovim-plugin:vim-coffee-script": {
+    "neovim-plugin__vim-coffee-script": {
       "flake": false,
       "locked": {
         "lastModified": 1608483613,
@@ -306,7 +306,7 @@
         "type": "github"
       }
     },
-    "neovim-plugin:vim-easy-align": {
+    "neovim-plugin__vim-easy-align": {
       "flake": false,
       "locked": {
         "lastModified": 1556512351,
@@ -322,7 +322,7 @@
         "type": "github"
       }
     },
-    "neovim-plugin:vim-endwise": {
+    "neovim-plugin__vim-endwise": {
       "flake": false,
       "locked": {
         "lastModified": 1660731673,
@@ -338,7 +338,7 @@
         "type": "github"
       }
     },
-    "neovim-plugin:vim-eunuch": {
+    "neovim-plugin__vim-eunuch": {
       "flake": false,
       "locked": {
         "lastModified": 1665617668,
@@ -354,7 +354,7 @@
         "type": "github"
       }
     },
-    "neovim-plugin:vim-filebeagle": {
+    "neovim-plugin__vim-filebeagle": {
       "flake": false,
       "locked": {
         "lastModified": 1553460539,
@@ -370,7 +370,7 @@
         "type": "github"
       }
     },
-    "neovim-plugin:vim-fugitive": {
+    "neovim-plugin__vim-fugitive": {
       "flake": false,
       "locked": {
         "lastModified": 1669981871,
@@ -386,7 +386,7 @@
         "type": "github"
       }
     },
-    "neovim-plugin:vim-grepper": {
+    "neovim-plugin__vim-grepper": {
       "flake": false,
       "locked": {
         "lastModified": 1630307933,
@@ -402,7 +402,7 @@
         "type": "github"
       }
     },
-    "neovim-plugin:vim-kickstart": {
+    "neovim-plugin__vim-kickstart": {
       "flake": false,
       "locked": {
         "lastModified": 1522336164,
@@ -418,7 +418,7 @@
         "type": "github"
       }
     },
-    "neovim-plugin:vim-openscad": {
+    "neovim-plugin__vim-openscad": {
       "flake": false,
       "locked": {
         "lastModified": 1658845925,
@@ -434,7 +434,7 @@
         "type": "github"
       }
     },
-    "neovim-plugin:vim-plugin-ruscmd": {
+    "neovim-plugin__vim-plugin-ruscmd": {
       "flake": false,
       "locked": {
         "lastModified": 1427688537,
@@ -450,7 +450,7 @@
         "type": "github"
       }
     },
-    "neovim-plugin:vim-polyglot": {
+    "neovim-plugin__vim-polyglot": {
       "flake": false,
       "locked": {
         "lastModified": 1665762010,
@@ -466,7 +466,7 @@
         "type": "github"
       }
     },
-    "neovim-plugin:vim-repeat": {
+    "neovim-plugin__vim-repeat": {
       "flake": false,
       "locked": {
         "lastModified": 1611544268,
@@ -482,7 +482,7 @@
         "type": "github"
       }
     },
-    "neovim-plugin:vim-rooter": {
+    "neovim-plugin__vim-rooter": {
       "flake": false,
       "locked": {
         "lastModified": 1627488712,
@@ -498,7 +498,7 @@
         "type": "github"
       }
     },
-    "neovim-plugin:vim-surround": {
+    "neovim-plugin__vim-surround": {
       "flake": false,
       "locked": {
         "lastModified": 1666730476,
@@ -514,7 +514,7 @@
         "type": "github"
       }
     },
-    "neovim-plugin:vim-unimpaired": {
+    "neovim-plugin__vim-unimpaired": {
       "flake": false,
       "locked": {
         "lastModified": 1668992903,
@@ -552,34 +552,34 @@
         "flake-utils": "flake-utils",
         "neovim-flake": "neovim-flake",
         "neovim-nightly-overlay": "neovim-nightly-overlay",
-        "neovim-plugin:ale": "neovim-plugin:ale",
-        "neovim-plugin:editorconfig-vim": "neovim-plugin:editorconfig-vim",
-        "neovim-plugin:gitsigns.nvim": "neovim-plugin:gitsigns.nvim",
-        "neovim-plugin:hop.nvim": "neovim-plugin:hop.nvim",
-        "neovim-plugin:leap.nvim": "neovim-plugin:leap.nvim",
-        "neovim-plugin:lightline.vim": "neovim-plugin:lightline.vim",
-        "neovim-plugin:molokai": "neovim-plugin:molokai",
-        "neovim-plugin:nerdcommenter": "neovim-plugin:nerdcommenter",
-        "neovim-plugin:nvim-hlslens": "neovim-plugin:nvim-hlslens",
-        "neovim-plugin:plenary.nvim": "neovim-plugin:plenary.nvim",
-        "neovim-plugin:popup.nvim": "neovim-plugin:popup.nvim",
-        "neovim-plugin:supertab": "neovim-plugin:supertab",
-        "neovim-plugin:telescope.nvim": "neovim-plugin:telescope.nvim",
-        "neovim-plugin:vim-coffee-script": "neovim-plugin:vim-coffee-script",
-        "neovim-plugin:vim-easy-align": "neovim-plugin:vim-easy-align",
-        "neovim-plugin:vim-endwise": "neovim-plugin:vim-endwise",
-        "neovim-plugin:vim-eunuch": "neovim-plugin:vim-eunuch",
-        "neovim-plugin:vim-filebeagle": "neovim-plugin:vim-filebeagle",
-        "neovim-plugin:vim-fugitive": "neovim-plugin:vim-fugitive",
-        "neovim-plugin:vim-grepper": "neovim-plugin:vim-grepper",
-        "neovim-plugin:vim-kickstart": "neovim-plugin:vim-kickstart",
-        "neovim-plugin:vim-openscad": "neovim-plugin:vim-openscad",
-        "neovim-plugin:vim-plugin-ruscmd": "neovim-plugin:vim-plugin-ruscmd",
-        "neovim-plugin:vim-polyglot": "neovim-plugin:vim-polyglot",
-        "neovim-plugin:vim-repeat": "neovim-plugin:vim-repeat",
-        "neovim-plugin:vim-rooter": "neovim-plugin:vim-rooter",
-        "neovim-plugin:vim-surround": "neovim-plugin:vim-surround",
-        "neovim-plugin:vim-unimpaired": "neovim-plugin:vim-unimpaired",
+        "neovim-plugin__ale": "neovim-plugin__ale",
+        "neovim-plugin__editorconfig-vim": "neovim-plugin__editorconfig-vim",
+        "neovim-plugin__gitsigns_nvim": "neovim-plugin__gitsigns_nvim",
+        "neovim-plugin__hop_nvim": "neovim-plugin__hop_nvim",
+        "neovim-plugin__leap_nvim": "neovim-plugin__leap_nvim",
+        "neovim-plugin__lightline_vim": "neovim-plugin__lightline_vim",
+        "neovim-plugin__molokai": "neovim-plugin__molokai",
+        "neovim-plugin__nerdcommenter": "neovim-plugin__nerdcommenter",
+        "neovim-plugin__nvim-hlslens": "neovim-plugin__nvim-hlslens",
+        "neovim-plugin__plenary_nvim": "neovim-plugin__plenary_nvim",
+        "neovim-plugin__popup_nvim": "neovim-plugin__popup_nvim",
+        "neovim-plugin__supertab": "neovim-plugin__supertab",
+        "neovim-plugin__telescope_nvim": "neovim-plugin__telescope_nvim",
+        "neovim-plugin__vim-coffee-script": "neovim-plugin__vim-coffee-script",
+        "neovim-plugin__vim-easy-align": "neovim-plugin__vim-easy-align",
+        "neovim-plugin__vim-endwise": "neovim-plugin__vim-endwise",
+        "neovim-plugin__vim-eunuch": "neovim-plugin__vim-eunuch",
+        "neovim-plugin__vim-filebeagle": "neovim-plugin__vim-filebeagle",
+        "neovim-plugin__vim-fugitive": "neovim-plugin__vim-fugitive",
+        "neovim-plugin__vim-grepper": "neovim-plugin__vim-grepper",
+        "neovim-plugin__vim-kickstart": "neovim-plugin__vim-kickstart",
+        "neovim-plugin__vim-openscad": "neovim-plugin__vim-openscad",
+        "neovim-plugin__vim-plugin-ruscmd": "neovim-plugin__vim-plugin-ruscmd",
+        "neovim-plugin__vim-polyglot": "neovim-plugin__vim-polyglot",
+        "neovim-plugin__vim-repeat": "neovim-plugin__vim-repeat",
+        "neovim-plugin__vim-rooter": "neovim-plugin__vim-rooter",
+        "neovim-plugin__vim-surround": "neovim-plugin__vim-surround",
+        "neovim-plugin__vim-unimpaired": "neovim-plugin__vim-unimpaired",
         "nixpkgs": "nixpkgs"
       }
     }

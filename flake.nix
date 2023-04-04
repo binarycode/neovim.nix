@@ -20,115 +20,115 @@
       };
       url = github:nix-community/neovim-nightly-overlay;
     };
-    "neovim-plugin:ale" = {
+    "neovim-plugin__ale" = {
       flake = false;
       url = github:dense-analysis/ale;
     };
-    "neovim-plugin:editorconfig-vim" = {
+    "neovim-plugin__editorconfig-vim" = {
       flake = false;
       url = github:editorconfig/editorconfig-vim;
     };
-    "neovim-plugin:gitsigns.nvim" = {
+    "neovim-plugin__gitsigns_nvim" = {
       flake = false;
       url = github:lewis6991/gitsigns.nvim;
     };
-    "neovim-plugin:hop.nvim" = {
+    "neovim-plugin__hop_nvim" = {
       flake = false;
       url = github:phaazon/hop.nvim;
     };
-    "neovim-plugin:leap.nvim" = {
+    "neovim-plugin__leap_nvim" = {
       flake = false;
       url = github:ggandor/leap.nvim;
     };
-    "neovim-plugin:lightline.vim" = {
+    "neovim-plugin__lightline_vim" = {
       flake = false;
       url = github:itchyny/lightline.vim;
     };
-    "neovim-plugin:nerdcommenter" = {
+    "neovim-plugin__nerdcommenter" = {
       flake = false;
       url = github:preservim/nerdcommenter;
     };
-    "neovim-plugin:nvim-hlslens" = {
+    "neovim-plugin__nvim-hlslens" = {
       flake = false;
       url = github:kevinhwang91/nvim-hlslens;
     };
-    "neovim-plugin:molokai" = {
+    "neovim-plugin__molokai" = {
       flake = false;
       url = github:tomasr/molokai;
     };
-    "neovim-plugin:plenary.nvim" = {
+    "neovim-plugin__plenary_nvim" = {
       flake = false;
       url = github:nvim-lua/plenary.nvim;
     };
-    "neovim-plugin:popup.nvim" = {
+    "neovim-plugin__popup_nvim" = {
       flake = false;
       url = github:nvim-lua/popup.nvim;
     };
-    "neovim-plugin:supertab" = {
+    "neovim-plugin__supertab" = {
       flake = false;
       url = github:ervandew/supertab;
     };
-    "neovim-plugin:telescope.nvim" = {
+    "neovim-plugin__telescope_nvim" = {
       flake = false;
       url = github:nvim-telescope/telescope.nvim;
     };
-    "neovim-plugin:vim-coffee-script" = {
+    "neovim-plugin__vim-coffee-script" = {
       flake = false;
       url = github:kchmck/vim-coffee-script;
     };
-    "neovim-plugin:vim-easy-align" = {
+    "neovim-plugin__vim-easy-align" = {
       flake = false;
       url = github:junegunn/vim-easy-align;
     };
-    "neovim-plugin:vim-endwise" = {
+    "neovim-plugin__vim-endwise" = {
       flake = false;
       url = github:tpope/vim-endwise;
     };
-    "neovim-plugin:vim-eunuch" = {
+    "neovim-plugin__vim-eunuch" = {
       flake = false;
       url = github:tpope/vim-eunuch;
     };
-    "neovim-plugin:vim-filebeagle" = {
+    "neovim-plugin__vim-filebeagle" = {
       flake = false;
       url = github:tobiwild/vim-filebeagle;
     };
-    "neovim-plugin:vim-fugitive" = {
+    "neovim-plugin__vim-fugitive" = {
       flake = false;
       url = github:tpope/vim-fugitive;
     };
-    "neovim-plugin:vim-grepper" = {
+    "neovim-plugin__vim-grepper" = {
       flake = false;
       url = github:mhinz/vim-grepper;
     };
-    "neovim-plugin:vim-kickstart" = {
+    "neovim-plugin__vim-kickstart" = {
       flake = false;
       url = github:tangledhelix/vim-kickstart;
     };
-    "neovim-plugin:vim-openscad" = {
+    "neovim-plugin__vim-openscad" = {
       flake = false;
       url = github:sirtaj/vim-openscad;
     };
-    "neovim-plugin:vim-plugin-ruscmd" = {
+    "neovim-plugin__vim-plugin-ruscmd" = {
       flake = false;
       url = github:powerman/vim-plugin-ruscmd;
     };
-    "neovim-plugin:vim-polyglot" = {
+    "neovim-plugin__vim-polyglot" = {
       flake = false;
       url = github:sheerun/vim-polyglot;
     };
-    "neovim-plugin:vim-repeat" = {
+    "neovim-plugin__vim-repeat" = {
       flake = false;
       url = github:tpope/vim-repeat;
     };
-    "neovim-plugin:vim-rooter" = {
+    "neovim-plugin__vim-rooter" = {
       flake = false;
       url = github:airblade/vim-rooter;
     };
-    "neovim-plugin:vim-surround" = {
+    "neovim-plugin__vim-surround" = {
       flake = false;
       url = github:tpope/vim-surround;
     };
-    "neovim-plugin:vim-unimpaired" = {
+    "neovim-plugin__vim-unimpaired" = {
       flake = false;
       url = github:tpope/vim-unimpaired;
     };

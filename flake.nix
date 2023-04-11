@@ -70,7 +70,7 @@
     };
     "neovim-plugin__telescope_nvim" = {
       flake = false;
-      url = github:nvim-telescope/telescope.nvim;
+      url = github:nvim-telescope/telescope.nvim?ref=0.1.x;
     };
     "neovim-plugin__vim-coffee-script" = {
       flake = false;

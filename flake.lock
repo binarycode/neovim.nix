@@ -277,15 +277,16 @@
     "neovim-plugin__telescope_nvim": {
       "flake": false,
       "locked": {
-        "lastModified": 1679492995,
-        "narHash": "sha256-Kyw9ryb8YgAKFWLac9yl/fD3nNcu7mv7xzuNU6pDMkU=",
+        "lastModified": 1681056828,
+        "narHash": "sha256-bAPERiwl7kPAMbt1xoBLNxyY9a4HPUkzUU39i5wAd90=",
         "owner": "nvim-telescope",
         "repo": "telescope.nvim",
-        "rev": "942fe5faef47b21241e970551eba407bc10d9547",
+        "rev": "9de317bdea2bc393074651179c4fc7f93e9b2d56",
         "type": "github"
       },
       "original": {
         "owner": "nvim-telescope",
+        "ref": "0.1.x",
         "repo": "telescope.nvim",
         "type": "github"
       }

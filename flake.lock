@@ -178,22 +178,6 @@
         "type": "github"
       }
     },
-    "neovim-plugin__one_monokai_nvim": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1681736191,
-        "narHash": "sha256-VyxI64ryeRZli1c3aB7w2v1lusR6MZrzl3Yz2kI0HMo=",
-        "owner": "cpea2506",
-        "repo": "one_monokai.nvim",
-        "rev": "d6e1beca6de5dbcd07bae850734b819cef019930",
-        "type": "github"
-      },
-      "original": {
-        "owner": "cpea2506",
-        "repo": "one_monokai.nvim",
-        "type": "github"
-      }
-    },
     "neovim-plugin__plenary_nvim": {
       "flake": false,
       "locked": {
@@ -223,22 +207,6 @@
       "original": {
         "owner": "nvim-lua",
         "repo": "popup.nvim",
-        "type": "github"
-      }
-    },
-    "neovim-plugin__sonokai": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1682108231,
-        "narHash": "sha256-rtNSRbGnz8WmttrRzzClFpoagIDXkspelG64RfOjG5w=",
-        "owner": "sainnhe",
-        "repo": "sonokai",
-        "rev": "17ba8e0dd81db0220c4b13aecdd566951d7b8222",
-        "type": "github"
-      },
-      "original": {
-        "owner": "sainnhe",
-        "repo": "sonokai",
         "type": "github"
       }
     },
@@ -435,22 +403,6 @@
         "type": "github"
       }
     },
-    "neovim-plugin__vim-polyglot": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1665762010,
-        "narHash": "sha256-w36n9Oeyac7zxp5sA0J+6A4f8PWtPLlYsmThKXdpNRg=",
-        "owner": "sheerun",
-        "repo": "vim-polyglot",
-        "rev": "bc8a81d3592dab86334f27d1d43c080ebf680d42",
-        "type": "github"
-      },
-      "original": {
-        "owner": "sheerun",
-        "repo": "vim-polyglot",
-        "type": "github"
-      }
-    },
     "neovim-plugin__vim-repeat": {
       "flake": false,
       "locked": {
@@ -544,10 +496,8 @@
         "neovim-plugin__monokai_nvim": "neovim-plugin__monokai_nvim",
         "neovim-plugin__nerdcommenter": "neovim-plugin__nerdcommenter",
         "neovim-plugin__nvim-hlslens": "neovim-plugin__nvim-hlslens",
-        "neovim-plugin__one_monokai_nvim": "neovim-plugin__one_monokai_nvim",
         "neovim-plugin__plenary_nvim": "neovim-plugin__plenary_nvim",
         "neovim-plugin__popup_nvim": "neovim-plugin__popup_nvim",
-        "neovim-plugin__sonokai": "neovim-plugin__sonokai",
         "neovim-plugin__supertab": "neovim-plugin__supertab",
         "neovim-plugin__telescope_nvim": "neovim-plugin__telescope_nvim",
         "neovim-plugin__vim-coffee-script": "neovim-plugin__vim-coffee-script",
@@ -560,7 +510,6 @@
         "neovim-plugin__vim-kickstart": "neovim-plugin__vim-kickstart",
         "neovim-plugin__vim-openscad": "neovim-plugin__vim-openscad",
         "neovim-plugin__vim-plugin-ruscmd": "neovim-plugin__vim-plugin-ruscmd",
-        "neovim-plugin__vim-polyglot": "neovim-plugin__vim-polyglot",
         "neovim-plugin__vim-repeat": "neovim-plugin__vim-repeat",
         "neovim-plugin__vim-rooter": "neovim-plugin__vim-rooter",
         "neovim-plugin__vim-surround": "neovim-plugin__vim-surround",

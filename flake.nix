@@ -37,20 +37,10 @@
       flake = false;
       url = github:tomasr/molokai;
     };
-
     "neovim-plugin__monokai_nvim" = {
       flake = false;
       url = github:tanvirtin/monokai.nvim;
     };
-    "neovim-plugin__sonokai" = {
-      flake = false;
-      url = github:sainnhe/sonokai;
-    };
-    "neovim-plugin__one_monokai_nvim" = {
-      flake = false;
-      url = github:cpea2506/one_monokai.nvim;
-    };
-
     "neovim-plugin__plenary_nvim" = {
       flake = false;
       url = github:nvim-lua/plenary.nvim;
@@ -106,10 +96,6 @@
     "neovim-plugin__vim-plugin-ruscmd" = {
       flake = false;
       url = github:powerman/vim-plugin-ruscmd;
-    };
-    "neovim-plugin__vim-polyglot" = {
-      flake = false;
-      url = github:sheerun/vim-polyglot;
     };
     "neovim-plugin__vim-repeat" = {
       flake = false;

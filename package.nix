@@ -29,7 +29,6 @@
     (import ./vim-kickstart)
     (import ./vim-openscad)
     (import ./vim-plugin-ruscmd)
-    (import ./vim-polyglot)
     (import ./vim-repeat)
     (import ./vim-rooter)
     (import ./vim-surround)

@@ -8,6 +8,7 @@ lua << EOF
   require('monokai').setup {
     palette = {
       base2 = '#000000'
-    }
+    },
+    italics = false
   }
 EOF

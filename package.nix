@@ -1,6 +1,8 @@
 { inputs, pkgs }: let
   modules = [
-    (import ./colorscheme) # colorscheme should be first
+    (import ./nvim-treesitter pkgs)
+
+    (import ./monokai-nvim)
 
     (import ./config-base)
     (import ./config-experimental)
@@ -36,6 +38,8 @@
 
   configs = builtins.map (module: module.config or "");
 
+  rawPlugins = modules: pkgs.lib.flatten(builtins.map (module: module.raw or []) modules);
+
   plugins = modules: let
     build = plugin: pkgs.vimUtils.buildVimPluginFrom2Nix {
       pname   = plugin;
@@ -54,6 +58,6 @@ in pkgs.wrapNeovim pkgs.neovim-unwrapped {
 
   configure = {
     customRC = builtins.concatStringsSep "\n" (configs modules);
-    packages.neovim-plugins.start = plugins modules;
+    packages.neovim-plugins.start = (rawPlugins modules) ++ (plugins modules);
   };
 }

@@ -1,25 +1,6 @@
 {
   inputs = {
-    flake-compat = {
-      flake = false;
-      url = github:edolstra/flake-compat;
-    };
     flake-utils.url = github:numtide/flake-utils;
-    neovim-flake = {
-      inputs = {
-        flake-utils.follows = "flake-utils";
-        nixpkgs.follows     = "nixpkgs";
-      };
-      url = github:neovim/neovim?dir=contrib;
-    };
-    neovim-nightly-overlay = {
-      inputs = {
-        flake-compat.follows = "flake-compat";
-        neovim-flake.follows = "neovim-flake";
-        nixpkgs.follows      = "nixpkgs";
-      };
-      url = github:nix-community/neovim-nightly-overlay;
-    };
     "neovim-plugin__ale" = {
       flake = false;
       url = github:dense-analysis/ale;
@@ -56,6 +37,20 @@
       flake = false;
       url = github:tomasr/molokai;
     };
+
+    "neovim-plugin__monokai_nvim" = {
+      flake = false;
+      url = github:tanvirtin/monokai.nvim;
+    };
+    "neovim-plugin__sonokai" = {
+      flake = false;
+      url = github:sainnhe/sonokai;
+    };
+    "neovim-plugin__one_monokai_nvim" = {
+      flake = false;
+      url = github:cpea2506/one_monokai.nvim;
+    };
+
     "neovim-plugin__plenary_nvim" = {
       flake = false;
       url = github:nvim-lua/plenary.nvim;
@@ -132,18 +127,17 @@
       flake = false;
       url = github:tpope/vim-unimpaired;
     };
-    nixpkgs.url = github:nixos/nixpkgs/nixos-unstable;
+    nixpkgs-aarch64-darwin.url = github:nixos/nixpkgs/nixpkgs-22.11-darwin;
   };
 
   outputs = inputs: let
+    neovim = pkgs: import ./package.nix {
+      inherit inputs pkgs;
+    };
     module = { pkgs, ... }: {
-      nixpkgs.overlays = [ inputs.neovim-nightly-overlay.overlay ];
-
       environment = {
         systemPackages = [
-          (import ./package.nix  {
-            inherit inputs pkgs;
-          })
+          (neovim pkgs)
         ];
         variables = {
           EDITOR = "nvim";
@@ -160,16 +154,19 @@
       default = module;
       neovim  = module;
     };
-  } // inputs.flake-utils.lib.eachDefaultSystem(system: {
+  } // inputs.flake-utils.lib.eachDefaultSystem(system: let
+    pkgs = import inputs."nixpkgs-${system}" {
+      inherit system;
+    };
+  in {
     apps.neovim = inputs.flake-utils.lib.mkApp {
-      drv = import ./package.nix {
-        inherit inputs;
-        pkgs = import inputs.nixpkgs {
-          inherit system;
-          overlays = [ inputs.neovim-nightly-overlay.overlay ];
-        };
-      };
+      drv = neovim pkgs;
       name = "nvim";
+    };
+    devShell = pkgs.mkShell {
+      packages = [
+        (neovim pkgs)
+      ];
     };
   });
 }

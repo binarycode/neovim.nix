@@ -1,21 +1,5 @@
 {
   "nodes": {
-    "flake-compat": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1673956053,
-        "narHash": "sha256-4gtG9iQuiKITOjNQQeQIpoIB6b16fm+504Ch3sNKLd8=",
-        "owner": "edolstra",
-        "repo": "flake-compat",
-        "rev": "35bb57c0c8d8b62bbfd284272c928ceb64ddbde9",
-        "type": "github"
-      },
-      "original": {
-        "owner": "edolstra",
-        "repo": "flake-compat",
-        "type": "github"
-      }
-    },
     "flake-utils": {
       "inputs": {
         "systems": "systems"
@@ -31,57 +15,6 @@
       "original": {
         "owner": "numtide",
         "repo": "flake-utils",
-        "type": "github"
-      }
-    },
-    "neovim-flake": {
-      "inputs": {
-        "flake-utils": [
-          "flake-utils"
-        ],
-        "nixpkgs": [
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "dir": "contrib",
-        "lastModified": 1680603386,
-        "narHash": "sha256-rnczhr9Xhxfzp1xdjaunOQQkuCh4paPMBWitBjsXcC4=",
-        "owner": "neovim",
-        "repo": "neovim",
-        "rev": "b83f949fd973f071db1ff522cc3acda0423f4faf",
-        "type": "github"
-      },
-      "original": {
-        "dir": "contrib",
-        "owner": "neovim",
-        "repo": "neovim",
-        "type": "github"
-      }
-    },
-    "neovim-nightly-overlay": {
-      "inputs": {
-        "flake-compat": [
-          "flake-compat"
-        ],
-        "neovim-flake": [
-          "neovim-flake"
-        ],
-        "nixpkgs": [
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1680596024,
-        "narHash": "sha256-tskY93I+q1XuxU5CWriWZhnHVGSP08WRoHCed01n2Sw=",
-        "owner": "nix-community",
-        "repo": "neovim-nightly-overlay",
-        "rev": "7070f17bb65146f9f6cff012c0321cbc9c8c8def",
-        "type": "github"
-      },
-      "original": {
-        "owner": "nix-community",
-        "repo": "neovim-nightly-overlay",
         "type": "github"
       }
     },
@@ -197,6 +130,22 @@
         "type": "github"
       }
     },
+    "neovim-plugin__monokai_nvim": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1674050493,
+        "narHash": "sha256-Q6+la2P2L1QmdsRKszBBMee8oLXHwdJGWjG/FMMFgT0=",
+        "owner": "tanvirtin",
+        "repo": "monokai.nvim",
+        "rev": "b8bd44d5796503173627d7a1fc51f77ec3a08a63",
+        "type": "github"
+      },
+      "original": {
+        "owner": "tanvirtin",
+        "repo": "monokai.nvim",
+        "type": "github"
+      }
+    },
     "neovim-plugin__nerdcommenter": {
       "flake": false,
       "locked": {
@@ -229,6 +178,22 @@
         "type": "github"
       }
     },
+    "neovim-plugin__one_monokai_nvim": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1681736191,
+        "narHash": "sha256-VyxI64ryeRZli1c3aB7w2v1lusR6MZrzl3Yz2kI0HMo=",
+        "owner": "cpea2506",
+        "repo": "one_monokai.nvim",
+        "rev": "d6e1beca6de5dbcd07bae850734b819cef019930",
+        "type": "github"
+      },
+      "original": {
+        "owner": "cpea2506",
+        "repo": "one_monokai.nvim",
+        "type": "github"
+      }
+    },
     "neovim-plugin__plenary_nvim": {
       "flake": false,
       "locked": {
@@ -258,6 +223,22 @@
       "original": {
         "owner": "nvim-lua",
         "repo": "popup.nvim",
+        "type": "github"
+      }
+    },
+    "neovim-plugin__sonokai": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1682108231,
+        "narHash": "sha256-rtNSRbGnz8WmttrRzzClFpoagIDXkspelG64RfOjG5w=",
+        "owner": "sainnhe",
+        "repo": "sonokai",
+        "rev": "17ba8e0dd81db0220c4b13aecdd566951d7b8222",
+        "type": "github"
+      },
+      "original": {
+        "owner": "sainnhe",
+        "repo": "sonokai",
         "type": "github"
       }
     },
@@ -534,28 +515,25 @@
         "type": "github"
       }
     },
-    "nixpkgs": {
+    "nixpkgs-aarch64-darwin": {
       "locked": {
-        "lastModified": 1681920287,
-        "narHash": "sha256-+/d6XQQfhhXVfqfLROJoqj3TuG38CAeoT6jO1g9r1k0=",
+        "lastModified": 1682173319,
+        "narHash": "sha256-tPhOpJJ+wrWIusvGgIB2+x6ILfDkEgQMX0BTtM5vd/4=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "645bc49f34fa8eff95479f0345ff57e55b53437e",
+        "rev": "ee7ec1c71adc47d2e3c2d5eb0d6b8fbbd42a8d1c",
         "type": "github"
       },
       "original": {
         "owner": "nixos",
-        "ref": "nixos-unstable",
+        "ref": "nixpkgs-22.11-darwin",
         "repo": "nixpkgs",
         "type": "github"
       }
     },
     "root": {
       "inputs": {
-        "flake-compat": "flake-compat",
         "flake-utils": "flake-utils",
-        "neovim-flake": "neovim-flake",
-        "neovim-nightly-overlay": "neovim-nightly-overlay",
         "neovim-plugin__ale": "neovim-plugin__ale",
         "neovim-plugin__editorconfig-vim": "neovim-plugin__editorconfig-vim",
         "neovim-plugin__gitsigns_nvim": "neovim-plugin__gitsigns_nvim",
@@ -563,10 +541,13 @@
         "neovim-plugin__leap_nvim": "neovim-plugin__leap_nvim",
         "neovim-plugin__lightline_vim": "neovim-plugin__lightline_vim",
         "neovim-plugin__molokai": "neovim-plugin__molokai",
+        "neovim-plugin__monokai_nvim": "neovim-plugin__monokai_nvim",
         "neovim-plugin__nerdcommenter": "neovim-plugin__nerdcommenter",
         "neovim-plugin__nvim-hlslens": "neovim-plugin__nvim-hlslens",
+        "neovim-plugin__one_monokai_nvim": "neovim-plugin__one_monokai_nvim",
         "neovim-plugin__plenary_nvim": "neovim-plugin__plenary_nvim",
         "neovim-plugin__popup_nvim": "neovim-plugin__popup_nvim",
+        "neovim-plugin__sonokai": "neovim-plugin__sonokai",
         "neovim-plugin__supertab": "neovim-plugin__supertab",
         "neovim-plugin__telescope_nvim": "neovim-plugin__telescope_nvim",
         "neovim-plugin__vim-coffee-script": "neovim-plugin__vim-coffee-script",
@@ -584,7 +565,7 @@
         "neovim-plugin__vim-rooter": "neovim-plugin__vim-rooter",
         "neovim-plugin__vim-surround": "neovim-plugin__vim-surround",
         "neovim-plugin__vim-unimpaired": "neovim-plugin__vim-unimpaired",
-        "nixpkgs": "nixpkgs"
+        "nixpkgs-aarch64-darwin": "nixpkgs-aarch64-darwin"
       }
     },
     "systems": {

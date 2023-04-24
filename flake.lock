@@ -178,6 +178,22 @@
         "type": "github"
       }
     },
+    "neovim-plugin__nvim-treesitter-endwise": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1664220897,
+        "narHash": "sha256-Pns+3gLlwhrojKQWN+zOFxOmgRkG3vTPGoLX90Sg+oo=",
+        "owner": "RRethy",
+        "repo": "nvim-treesitter-endwise",
+        "rev": "0cf4601c330cf724769a2394df555a57d5fd3f34",
+        "type": "github"
+      },
+      "original": {
+        "owner": "RRethy",
+        "repo": "nvim-treesitter-endwise",
+        "type": "github"
+      }
+    },
     "neovim-plugin__plenary_nvim": {
       "flake": false,
       "locked": {
@@ -272,22 +288,6 @@
       "original": {
         "owner": "junegunn",
         "repo": "vim-easy-align",
-        "type": "github"
-      }
-    },
-    "neovim-plugin__vim-endwise": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1677367089,
-        "narHash": "sha256-aiBBW1vvIn+ekSx+XynZmflWNl9yId0H8zD4KdU2NzY=",
-        "owner": "tpope",
-        "repo": "vim-endwise",
-        "rev": "c3411c95290063f56dfe13b485882111ef403c6e",
-        "type": "github"
-      },
-      "original": {
-        "owner": "tpope",
-        "repo": "vim-endwise",
         "type": "github"
       }
     },
@@ -496,13 +496,13 @@
         "neovim-plugin__monokai_nvim": "neovim-plugin__monokai_nvim",
         "neovim-plugin__nerdcommenter": "neovim-plugin__nerdcommenter",
         "neovim-plugin__nvim-hlslens": "neovim-plugin__nvim-hlslens",
+        "neovim-plugin__nvim-treesitter-endwise": "neovim-plugin__nvim-treesitter-endwise",
         "neovim-plugin__plenary_nvim": "neovim-plugin__plenary_nvim",
         "neovim-plugin__popup_nvim": "neovim-plugin__popup_nvim",
         "neovim-plugin__supertab": "neovim-plugin__supertab",
         "neovim-plugin__telescope_nvim": "neovim-plugin__telescope_nvim",
         "neovim-plugin__vim-coffee-script": "neovim-plugin__vim-coffee-script",
         "neovim-plugin__vim-easy-align": "neovim-plugin__vim-easy-align",
-        "neovim-plugin__vim-endwise": "neovim-plugin__vim-endwise",
         "neovim-plugin__vim-eunuch": "neovim-plugin__vim-eunuch",
         "neovim-plugin__vim-filebeagle": "neovim-plugin__vim-filebeagle",
         "neovim-plugin__vim-fugitive": "neovim-plugin__vim-fugitive",

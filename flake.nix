@@ -33,6 +33,10 @@
       flake = false;
       url = github:kevinhwang91/nvim-hlslens;
     };
+    "neovim-plugin__nvim-treesitter-endwise" = {
+      flake = false;
+      url = github:RRethy/nvim-treesitter-endwise;
+    };
     "neovim-plugin__molokai" = {
       flake = false;
       url = github:tomasr/molokai;
@@ -64,10 +68,6 @@
     "neovim-plugin__vim-easy-align" = {
       flake = false;
       url = github:junegunn/vim-easy-align;
-    };
-    "neovim-plugin__vim-endwise" = {
-      flake = false;
-      url = github:tpope/vim-endwise;
     };
     "neovim-plugin__vim-eunuch" = {
       flake = false;

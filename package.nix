@@ -21,7 +21,6 @@
     (import ./telescope-nvim)
     (import ./vim-coffee-script)
     (import ./vim-easy-align)
-    (import ./vim-endwise)
     (import ./vim-eunuch)
     (import ./vim-filebeagle)
     (import ./vim-fugitive)

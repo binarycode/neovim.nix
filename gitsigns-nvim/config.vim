@@ -1,6 +1,6 @@
 lua << EOF
   require('gitsigns').setup {
-    signcolumn = true,
-    numhl = false
+    signcolumn = false,
+    numhl = true
   }
 EOF

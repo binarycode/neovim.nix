@@ -243,6 +243,22 @@
         "type": "github"
       }
     },
+    "neovim-plugin__vim-coffee-script": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1608483613,
+        "narHash": "sha256-AvAB9ssClOOrcGQRZ70sMrcrmHlb0L+9FOh0MTLkZx4=",
+        "owner": "kchmck",
+        "repo": "vim-coffee-script",
+        "rev": "28421258a8dde5a50deafbfc19cd9873cacfaa79",
+        "type": "github"
+      },
+      "original": {
+        "owner": "kchmck",
+        "repo": "vim-coffee-script",
+        "type": "github"
+      }
+    },
     "neovim-plugin__vim-easy-align": {
       "flake": false,
       "locked": {
@@ -320,6 +336,22 @@
       "original": {
         "owner": "mhinz",
         "repo": "vim-grepper",
+        "type": "github"
+      }
+    },
+    "neovim-plugin__vim-kickstart": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1522336164,
+        "narHash": "sha256-o3XSXSE0gzSgX6wyjwMPmNTGPnZJMRm2cnVEJtF6Gxs=",
+        "owner": "tangledhelix",
+        "repo": "vim-kickstart",
+        "rev": "da484930941fcd1ff2215bc7d5f1568bef6fda7f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "tangledhelix",
+        "repo": "vim-kickstart",
         "type": "github"
       }
     },
@@ -436,11 +468,13 @@
         "neovim-plugin__popup_nvim": "neovim-plugin__popup_nvim",
         "neovim-plugin__supertab": "neovim-plugin__supertab",
         "neovim-plugin__telescope_nvim": "neovim-plugin__telescope_nvim",
+        "neovim-plugin__vim-coffee-script": "neovim-plugin__vim-coffee-script",
         "neovim-plugin__vim-easy-align": "neovim-plugin__vim-easy-align",
         "neovim-plugin__vim-eunuch": "neovim-plugin__vim-eunuch",
         "neovim-plugin__vim-filebeagle": "neovim-plugin__vim-filebeagle",
         "neovim-plugin__vim-fugitive": "neovim-plugin__vim-fugitive",
         "neovim-plugin__vim-grepper": "neovim-plugin__vim-grepper",
+        "neovim-plugin__vim-kickstart": "neovim-plugin__vim-kickstart",
         "neovim-plugin__vim-plugin-ruscmd": "neovim-plugin__vim-plugin-ruscmd",
         "neovim-plugin__vim-repeat": "neovim-plugin__vim-repeat",
         "neovim-plugin__vim-rooter": "neovim-plugin__vim-rooter",

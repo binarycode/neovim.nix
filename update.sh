@@ -14,11 +14,13 @@ nix flake lock --update-input neovim-plugin__plenary_nvim
 nix flake lock --update-input neovim-plugin__popup_nvim
 nix flake lock --update-input neovim-plugin__supertab
 nix flake lock --update-input neovim-plugin__telescope_nvim
+nix flake lock --update-input neovim-plugin__neovim-plugin__vim-coffee-script
 nix flake lock --update-input neovim-plugin__vim-easy-align
 nix flake lock --update-input neovim-plugin__vim-eunuch
 nix flake lock --update-input neovim-plugin__vim-filebeagle
 nix flake lock --update-input neovim-plugin__vim-fugitive
 nix flake lock --update-input neovim-plugin__vim-grepper
+nix flake lock --update-input neovim-plugin__neovim-plugin__vim-kickstart
 nix flake lock --update-input neovim-plugin__vim-plugin-ruscmd
 nix flake lock --update-input neovim-plugin__vim-repeat
 nix flake lock --update-input neovim-plugin__vim-rooter

@@ -57,6 +57,10 @@
       flake = false;
       url = github:nvim-telescope/telescope.nvim?ref=0.1.x;
     };
+    "neovim-plugin__vim-coffee-script" = {
+      flake = false;
+      url = github:kchmck/vim-coffee-script;
+    };
     "neovim-plugin__vim-easy-align" = {
       flake = false;
       url = github:junegunn/vim-easy-align;
@@ -76,6 +80,10 @@
     "neovim-plugin__vim-grepper" = {
       flake = false;
       url = github:mhinz/vim-grepper;
+    };
+    "neovim-plugin__vim-kickstart" = {
+      flake = false;
+      url = github:tangledhelix/vim-kickstart;
     };
     "neovim-plugin__vim-plugin-ruscmd" = {
       flake = false;

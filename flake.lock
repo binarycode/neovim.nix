@@ -21,11 +21,11 @@
     "neovim-plugin__ale": {
       "flake": false,
       "locked": {
-        "lastModified": 1680426598,
-        "narHash": "sha256-QVV3tM+wRNd794WxZWhMq/gn0r6QCMpzcZX3foZCaMM=",
+        "lastModified": 1686275813,
+        "narHash": "sha256-YXxZ+RPR1O6bXrbe5j0Vre1kldVxq9MqsGb2o9lxE7o=",
         "owner": "dense-analysis",
         "repo": "ale",
-        "rev": "b0ba31f88e09c033630ac15ae07143af7f658072",
+        "rev": "c0eff9f2f18c5408596ce1e8e43dc7933340e514",
         "type": "github"
       },
       "original": {
@@ -53,11 +53,11 @@
     "neovim-plugin__gitsigns_nvim": {
       "flake": false,
       "locked": {
-        "lastModified": 1680593514,
-        "narHash": "sha256-nUVVEO06giiJURxT7qNHbX9C1ljZtchUeOdEoCQBk3E=",
+        "lastModified": 1686128643,
+        "narHash": "sha256-DmbtKxU/tyFzIUNzoKvtsqlucdINYCSePzLiV7LLGn4=",
         "owner": "lewis6991",
         "repo": "gitsigns.nvim",
-        "rev": "372d5cb485f2062ac74abc5b33054abac21d8b58",
+        "rev": "4455bb5364d29ff86639dfd5533d4fe4b48192d4",
         "type": "github"
       },
       "original": {
@@ -69,11 +69,11 @@
     "neovim-plugin__hop_nvim": {
       "flake": false,
       "locked": {
-        "lastModified": 1667151642,
-        "narHash": "sha256-UZZlo5n1x8UfM9OP7RHfT3sFRfMpLkBLbEdcSO+SU6E=",
+        "lastModified": 1684332066,
+        "narHash": "sha256-xdjFbdp0+S3pVdwcOFmad8PMUU033WeDzswOSdxSQjg=",
         "owner": "phaazon",
         "repo": "hop.nvim",
-        "rev": "90db1b2c61b820e230599a04fedcd2679e64bd07",
+        "rev": "03f0434869f1f38868618198b5f4f2ab6d39aef2",
         "type": "github"
       },
       "original": {
@@ -85,11 +85,11 @@
     "neovim-plugin__leap_nvim": {
       "flake": false,
       "locked": {
-        "lastModified": 1678823512,
-        "narHash": "sha256-bzmsib8Qr2Whu1FqHzvrsIfSKf/CFutsaM3Sz8gaTLo=",
+        "lastModified": 1685704459,
+        "narHash": "sha256-V9malmIjB4U00o0VWCFo3IXr3BVO+RdweFNoor/4a9w=",
         "owner": "ggandor",
         "repo": "leap.nvim",
-        "rev": "f74473d23ebf60957e0db3ff8172349a82e5a442",
+        "rev": "14b5a65190fe69388a8f59c695ed3394a10d6af8",
         "type": "github"
       },
       "original": {
@@ -114,22 +114,6 @@
         "type": "github"
       }
     },
-    "neovim-plugin__molokai": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1447244265,
-        "narHash": "sha256-OgzU7vm046T9gmxmqO3sRKCH0E9QAheYGoT7WbL8Ot4=",
-        "owner": "tomasr",
-        "repo": "molokai",
-        "rev": "c67bdfcdb31415aa0ade7f8c003261700a885476",
-        "type": "github"
-      },
-      "original": {
-        "owner": "tomasr",
-        "repo": "molokai",
-        "type": "github"
-      }
-    },
     "neovim-plugin__monokai_nvim": {
       "flake": false,
       "locked": {
@@ -149,11 +133,11 @@
     "neovim-plugin__nerdcommenter": {
       "flake": false,
       "locked": {
-        "lastModified": 1675628052,
-        "narHash": "sha256-B7LIhUM2EM3OZxnSP6xAXmbMrWz7u3B1yHx8JuFjIkc=",
+        "lastModified": 1685954073,
+        "narHash": "sha256-Ak1ZwBb/enbcblSPAzpwV3+Rl08mK7lORw/MbW6M4+s=",
         "owner": "preservim",
         "repo": "nerdcommenter",
-        "rev": "d069f7fb562fb9eb6911fe23cda7aca2a387043e",
+        "rev": "b0b09ea46c9f0509556257bd8b838b40f493d6a0",
         "type": "github"
       },
       "original": {
@@ -181,11 +165,11 @@
     "neovim-plugin__nvim-treesitter-endwise": {
       "flake": false,
       "locked": {
-        "lastModified": 1664220897,
-        "narHash": "sha256-Pns+3gLlwhrojKQWN+zOFxOmgRkG3vTPGoLX90Sg+oo=",
+        "lastModified": 1682894397,
+        "narHash": "sha256-2JiLAaxnBLdv/eg3zKxsZXEiZQR1ZYKhGEhFu3BUBVo=",
         "owner": "RRethy",
         "repo": "nvim-treesitter-endwise",
-        "rev": "0cf4601c330cf724769a2394df555a57d5fd3f34",
+        "rev": "944b0d85bb6817948eaaf78893cbb23c25641d8f",
         "type": "github"
       },
       "original": {
@@ -197,11 +181,11 @@
     "neovim-plugin__plenary_nvim": {
       "flake": false,
       "locked": {
-        "lastModified": 1676797549,
-        "narHash": "sha256-z5JHuQcF1EvySnRBywl6EOrp8aRO0nd2dnkXJg2ge58=",
+        "lastModified": 1685508880,
+        "narHash": "sha256-5qtGxspjtCnkuoaE2gDnti58U4r34O1bBvjvUdTgKmU=",
         "owner": "nvim-lua",
         "repo": "plenary.nvim",
-        "rev": "253d34830709d690f013daf2853a9d21ad7accab",
+        "rev": "499e0743cf5e8075cd32af68baa3946a1c76adf1",
         "type": "github"
       },
       "original": {
@@ -245,33 +229,17 @@
     "neovim-plugin__telescope_nvim": {
       "flake": false,
       "locked": {
-        "lastModified": 1681056828,
-        "narHash": "sha256-bAPERiwl7kPAMbt1xoBLNxyY9a4HPUkzUU39i5wAd90=",
+        "lastModified": 1686302912,
+        "narHash": "sha256-fV3LLRwAPykVGc4ImOnUSP+WTrPp9Ad9OTfBJ6wqTMk=",
         "owner": "nvim-telescope",
         "repo": "telescope.nvim",
-        "rev": "9de317bdea2bc393074651179c4fc7f93e9b2d56",
+        "rev": "776b509f80dd49d8205b9b0d94485568236d1192",
         "type": "github"
       },
       "original": {
         "owner": "nvim-telescope",
         "ref": "0.1.x",
         "repo": "telescope.nvim",
-        "type": "github"
-      }
-    },
-    "neovim-plugin__vim-coffee-script": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1608483613,
-        "narHash": "sha256-AvAB9ssClOOrcGQRZ70sMrcrmHlb0L+9FOh0MTLkZx4=",
-        "owner": "kchmck",
-        "repo": "vim-coffee-script",
-        "rev": "28421258a8dde5a50deafbfc19cd9873cacfaa79",
-        "type": "github"
-      },
-      "original": {
-        "owner": "kchmck",
-        "repo": "vim-coffee-script",
         "type": "github"
       }
     },
@@ -326,11 +294,11 @@
     "neovim-plugin__vim-fugitive": {
       "flake": false,
       "locked": {
-        "lastModified": 1680188518,
-        "narHash": "sha256-66/j4epMSJKpV8KV4olE+38rQMARSP8Zt+L5UGG94eA=",
+        "lastModified": 1682738626,
+        "narHash": "sha256-hr7ekRKGQU7cvCuCyOv1gSo7HtaTv/F5t783rzNk/WE=",
         "owner": "tpope",
         "repo": "vim-fugitive",
-        "rev": "ef99f1d90cdb33a52931aed5868785b51fb9411d",
+        "rev": "5f0d280b517cacb16f59316659966c7ca5e2bea2",
         "type": "github"
       },
       "original": {
@@ -352,38 +320,6 @@
       "original": {
         "owner": "mhinz",
         "repo": "vim-grepper",
-        "type": "github"
-      }
-    },
-    "neovim-plugin__vim-kickstart": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1522336164,
-        "narHash": "sha256-o3XSXSE0gzSgX6wyjwMPmNTGPnZJMRm2cnVEJtF6Gxs=",
-        "owner": "tangledhelix",
-        "repo": "vim-kickstart",
-        "rev": "da484930941fcd1ff2215bc7d5f1568bef6fda7f",
-        "type": "github"
-      },
-      "original": {
-        "owner": "tangledhelix",
-        "repo": "vim-kickstart",
-        "type": "github"
-      }
-    },
-    "neovim-plugin__vim-openscad": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1658845925,
-        "narHash": "sha256-lzLHlf5ELodySd7FSMAxKnuTSaK2HmifzkBtX9K/BuU=",
-        "owner": "sirtaj",
-        "repo": "vim-openscad",
-        "rev": "11ed125209e2277d439cf6d0340c6fca263cb09b",
-        "type": "github"
-      },
-      "original": {
-        "owner": "sirtaj",
-        "repo": "vim-openscad",
         "type": "github"
       }
     },
@@ -492,7 +428,6 @@
         "neovim-plugin__hop_nvim": "neovim-plugin__hop_nvim",
         "neovim-plugin__leap_nvim": "neovim-plugin__leap_nvim",
         "neovim-plugin__lightline_vim": "neovim-plugin__lightline_vim",
-        "neovim-plugin__molokai": "neovim-plugin__molokai",
         "neovim-plugin__monokai_nvim": "neovim-plugin__monokai_nvim",
         "neovim-plugin__nerdcommenter": "neovim-plugin__nerdcommenter",
         "neovim-plugin__nvim-hlslens": "neovim-plugin__nvim-hlslens",
@@ -501,14 +436,11 @@
         "neovim-plugin__popup_nvim": "neovim-plugin__popup_nvim",
         "neovim-plugin__supertab": "neovim-plugin__supertab",
         "neovim-plugin__telescope_nvim": "neovim-plugin__telescope_nvim",
-        "neovim-plugin__vim-coffee-script": "neovim-plugin__vim-coffee-script",
         "neovim-plugin__vim-easy-align": "neovim-plugin__vim-easy-align",
         "neovim-plugin__vim-eunuch": "neovim-plugin__vim-eunuch",
         "neovim-plugin__vim-filebeagle": "neovim-plugin__vim-filebeagle",
         "neovim-plugin__vim-fugitive": "neovim-plugin__vim-fugitive",
         "neovim-plugin__vim-grepper": "neovim-plugin__vim-grepper",
-        "neovim-plugin__vim-kickstart": "neovim-plugin__vim-kickstart",
-        "neovim-plugin__vim-openscad": "neovim-plugin__vim-openscad",
         "neovim-plugin__vim-plugin-ruscmd": "neovim-plugin__vim-plugin-ruscmd",
         "neovim-plugin__vim-repeat": "neovim-plugin__vim-repeat",
         "neovim-plugin__vim-rooter": "neovim-plugin__vim-rooter",

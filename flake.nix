@@ -25,6 +25,10 @@
       flake = false;
       url = github:itchyny/lightline.vim;
     };
+    "neovim-plugin__monokai_nvim" = {
+      flake = false;
+      url = github:tanvirtin/monokai.nvim;
+    };
     "neovim-plugin__nerdcommenter" = {
       flake = false;
       url = github:preservim/nerdcommenter;
@@ -36,14 +40,6 @@
     "neovim-plugin__nvim-treesitter-endwise" = {
       flake = false;
       url = github:RRethy/nvim-treesitter-endwise;
-    };
-    "neovim-plugin__molokai" = {
-      flake = false;
-      url = github:tomasr/molokai;
-    };
-    "neovim-plugin__monokai_nvim" = {
-      flake = false;
-      url = github:tanvirtin/monokai.nvim;
     };
     "neovim-plugin__plenary_nvim" = {
       flake = false;
@@ -60,10 +56,6 @@
     "neovim-plugin__telescope_nvim" = {
       flake = false;
       url = github:nvim-telescope/telescope.nvim?ref=0.1.x;
-    };
-    "neovim-plugin__vim-coffee-script" = {
-      flake = false;
-      url = github:kchmck/vim-coffee-script;
     };
     "neovim-plugin__vim-easy-align" = {
       flake = false;
@@ -84,14 +76,6 @@
     "neovim-plugin__vim-grepper" = {
       flake = false;
       url = github:mhinz/vim-grepper;
-    };
-    "neovim-plugin__vim-kickstart" = {
-      flake = false;
-      url = github:tangledhelix/vim-kickstart;
-    };
-    "neovim-plugin__vim-openscad" = {
-      flake = false;
-      url = github:sirtaj/vim-openscad;
     };
     "neovim-plugin__vim-plugin-ruscmd" = {
       flake = false;

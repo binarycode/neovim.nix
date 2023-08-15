@@ -21,11 +21,11 @@
     "neovim-plugin__ale": {
       "flake": false,
       "locked": {
-        "lastModified": 1691255403,
-        "narHash": "sha256-er2rdSo0VqyLgMFPCuWZpH7oVJvYSktoecnnJmtM3c0=",
+        "lastModified": 1692094847,
+        "narHash": "sha256-HHO8vErpo31bnduFlxjBKnRy3jBFV0RcJxSTmKti0hY=",
         "owner": "dense-analysis",
         "repo": "ale",
-        "rev": "15cbc0e912acf31d8185dbef00473e9555591350",
+        "rev": "fe38101db7253e450f67893583d1a5dfeefd9ee5",
         "type": "github"
       },
       "original": {
@@ -53,11 +53,11 @@
     "neovim-plugin__gitsigns_nvim": {
       "flake": false,
       "locked": {
-        "lastModified": 1691309686,
-        "narHash": "sha256-FjPmzsE87AZeOGcLjpYzfF2h5MfIVy7inecZ4dkE9kg=",
+        "lastModified": 1692102516,
+        "narHash": "sha256-jziyWt2H+6y35LmqmeliHHwnDkSXVLLfWtQjYbDzq0U=",
         "owner": "lewis6991",
         "repo": "gitsigns.nvim",
-        "rev": "31178496552584e84fa9e74e087dec1f6c347f5d",
+        "rev": "55f8fc7b13205d44359080ed00095674c353bd76",
         "type": "github"
       },
       "original": {
@@ -133,11 +133,11 @@
     "neovim-plugin__nerdcommenter": {
       "flake": false,
       "locked": {
-        "lastModified": 1687767692,
-        "narHash": "sha256-eWNxu4pRIU95pLJ4ld7i0SJCCEa+4f4pV0FvF9i0yNc=",
+        "lastModified": 1691878373,
+        "narHash": "sha256-7FqmaK4RcJLL2i362DfdnayCnBNGL0CI9c8ciWe4HZA=",
         "owner": "preservim",
         "repo": "nerdcommenter",
-        "rev": "ab2ae4d502a26bc591db78a8548823ddd04bbc9c",
+        "rev": "d2e21d417f6c788b11ae3b90d7ac478930dead36",
         "type": "github"
       },
       "original": {

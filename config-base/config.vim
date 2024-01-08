@@ -71,6 +71,7 @@ nnoremap <c-l> <c-w>l
 map J <PageDown>
 map K <PageUp>
 
+
 " Copy current path to buffer
 nmap ,cs :let @+=fnamemodify(expand("%"), ":~:.")<CR>
 nmap ,cl :let @+=expand("%:p")<CR>

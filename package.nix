@@ -18,7 +18,7 @@
     (import ./nerdcommenter)
     (import ./nvim-hlslens)
     (import ./supertab)
-    (import ./telescope-nvim)
+    #(import ./telescope-nvim)
     (import ./vim-coffee-script)
     (import ./vim-easy-align)
     (import ./vim-eunuch)

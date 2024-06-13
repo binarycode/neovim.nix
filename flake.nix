@@ -105,7 +105,7 @@
       flake = false;
       url = github:tpope/vim-unimpaired;
     };
-    nixpkgs-aarch64-darwin.url = github:nixos/nixpkgs/nixpkgs-23.11-darwin;
+    nixpkgs-aarch64-darwin.url = github:nixos/nixpkgs/nixpkgs-24.05-darwin;
   };
 
   outputs = inputs: let

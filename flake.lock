@@ -435,7 +435,7 @@
         "type": "github"
       }
     },
-    "nixpkgs-aarch64-darwin": {
+    "nixpkgs": {
       "locked": {
         "lastModified": 1717696253,
         "narHash": "sha256-1+ua0ggXlYYPLTmMl3YeYYsBXDSCqT+Gw3u6l4gvMhA=",
@@ -480,7 +480,7 @@
         "neovim-plugin__vim-rooter": "neovim-plugin__vim-rooter",
         "neovim-plugin__vim-surround": "neovim-plugin__vim-surround",
         "neovim-plugin__vim-unimpaired": "neovim-plugin__vim-unimpaired",
-        "nixpkgs-aarch64-darwin": "nixpkgs-aarch64-darwin"
+        "nixpkgs": "nixpkgs"
       }
     },
     "systems": {

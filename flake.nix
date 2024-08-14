@@ -105,7 +105,7 @@
       flake = false;
       url = github:tpope/vim-unimpaired;
     };
-    nixpkgs-aarch64-darwin.url = github:nixos/nixpkgs/nixpkgs-24.05-darwin;
+    nixpkgs.url = github:nixos/nixpkgs/nixpkgs-24.05-darwin;
   };
 
   outputs = inputs: let
@@ -133,7 +133,7 @@
       neovim  = module;
     };
   } // inputs.flake-utils.lib.eachDefaultSystem(system: let
-    pkgs = import inputs."nixpkgs-${system}" {
+    pkgs = import inputs.nixpkgs {
       inherit system;
     };
   in {

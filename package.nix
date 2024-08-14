@@ -38,7 +38,7 @@
   rawPlugins = modules: pkgs.lib.flatten(builtins.map (module: module.raw or []) modules);
 
   plugins = modules: let
-    build = plugin: pkgs.vimUtils.buildVimPluginFrom2Nix {
+    build = plugin: pkgs.vimUtils.buildVimPlugin {
       pname   = plugin;
       version = inputs."neovim-plugin__${plugin}".lastModifiedDate;
       src     = inputs."neovim-plugin__${plugin}";

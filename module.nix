@@ -1,8 +1,8 @@
-{pkgs, ...}: {
+inputs: {pkgs, ...}: {
   environment = {
     systemPackages = [
       (import ./package.nix {
-        inherit pkgs;
+        inherit inputs pkgs;
       })
     ];
     variables = {

@@ -118,7 +118,7 @@
         apps.neovim = {
           type = "app";
           program = import ./package.nix {
-            inherit pkgs;
+            inherit inputs pkgs;
           };
         };
         formatter = pkgs.alejandra;
@@ -128,7 +128,7 @@
       };
     })
     // {
-      nixosModules.default = import ./module.nix;
-      darwinModules.default = import ./module.nix;
+      nixosModules.default = import ./module.nix inputs;
+      darwinModules.default = import ./module.nix inputs;
     };
 }

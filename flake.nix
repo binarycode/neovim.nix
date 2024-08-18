@@ -111,29 +111,15 @@
     nixpkgs.url = github:nixos/nixpkgs/nixos-24.05;
   };
 
-  outputs = inputs: let
-    neovim = pkgs:
-      import ./package.nix {
-        inherit inputs pkgs;
-      };
-    module = {pkgs, ...}: {
-      environment = {
-        systemPackages = [
-          (neovim pkgs)
-        ];
-        variables = {
-          EDITOR = "nvim";
-          VISUAL = "nvim";
-        };
-      };
-    };
-  in
+  outputs = inputs:
     (inputs.flake-parts.lib.mkFlake {inherit inputs;} {
       systems = ["x86_64-linux" "aarch64-darwin"];
       perSystem = {pkgs, ...}: {
         apps.neovim = {
           type = "app";
-          program = neovim pkgs;
+          program = import ./package.nix inputs {
+            inherit pkgs;
+          };
         };
         formatter = pkgs.alejandra;
         devShells.default = pkgs.mkShell {
@@ -142,7 +128,7 @@
       };
     })
     // {
-      nixosModules.default = module;
-      darwinModules.default = module;
+      nixosModules.default = import ./module.nix inputs;
+      darwinModules.default = import ./module.nix inputs;
     };
 }

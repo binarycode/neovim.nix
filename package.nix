@@ -1,7 +1,4 @@
-{
-  inputs,
-  pkgs,
-}: let
+inputs: {pkgs, ...}: let
   modules = [
     (import ./nvim-treesitter pkgs)
 

@@ -1,4 +1,4 @@
 # use <tab> for completion
 {
-  plugins = [ "supertab" ];
+  plugins = ["supertab"];
 }

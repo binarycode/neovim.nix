@@ -1,4 +1,7 @@
-{ inputs, pkgs }: let
+{
+  inputs,
+  pkgs,
+}: let
   modules = [
     (import ./nvim-treesitter pkgs)
 
@@ -35,26 +38,29 @@
 
   configs = builtins.map (module: module.config or "");
 
-  rawPlugins = modules: pkgs.lib.flatten(builtins.map (module: module.raw or []) modules);
+  rawPlugins = modules: pkgs.lib.flatten (builtins.map (module: module.raw or []) modules);
 
   plugins = modules: let
-    build = plugin: pkgs.vimUtils.buildVimPlugin {
-      pname   = plugin;
-      version = inputs."neovim-plugin__${plugin}".lastModifiedDate;
-      src     = inputs."neovim-plugin__${plugin}";
-    };
+    build = plugin:
+      pkgs.vimUtils.buildVimPlugin {
+        pname = plugin;
+        version = inputs."neovim-plugin__${plugin}".lastModifiedDate;
+        src = inputs."neovim-plugin__${plugin}";
+      };
     names = pkgs.lib.flatten (builtins.map (module: module.plugins or []) modules);
-  in builtins.map build names;
-in pkgs.wrapNeovim pkgs.neovim-unwrapped {
-  viAlias  = true;
-  vimAlias = true;
+  in
+    builtins.map build names;
+in
+  pkgs.wrapNeovim pkgs.neovim-unwrapped {
+    viAlias = true;
+    vimAlias = true;
 
-  withRuby    = true;
-  withPython3 = true;
-  withNodeJs  = true;
+    withRuby = true;
+    withPython3 = true;
+    withNodeJs = true;
 
-  configure = {
-    customRC = builtins.concatStringsSep "\n" (configs modules);
-    packages.neovim-plugins.start = (rawPlugins modules) ++ (plugins modules);
-  };
-}
+    configure = {
+      customRC = builtins.concatStringsSep "\n" (configs modules);
+      packages.neovim-plugins.start = (rawPlugins modules) ++ (plugins modules);
+    };
+  }

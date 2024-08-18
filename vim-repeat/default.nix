@@ -1,4 +1,4 @@
 # support . repeat for plugins
 {
-  plugins = [ "vim-repeat" ];
+  plugins = ["vim-repeat"];
 }

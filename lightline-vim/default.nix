@@ -1,4 +1,4 @@
 # statusline/tabline styles
 {
-  plugins = [ "lightline_vim" ];
+  plugins = ["lightline_vim"];
 }

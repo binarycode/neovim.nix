@@ -1,4 +1,4 @@
 # coffeescript support
 {
-  plugins = [ "vim-coffee-script" ];
+  plugins = ["vim-coffee-script"];
 }

@@ -1,4 +1,4 @@
 {
   config = builtins.readFile ./config.vim;
-  plugins = [ "monokai_nvim" ];
+  plugins = ["monokai_nvim"];
 }

@@ -1,4 +1,4 @@
 # git wrapper
 {
-  plugins = [ "vim-fugitive" ];
+  plugins = ["vim-fugitive"];
 }

@@ -1,5 +1,5 @@
 # alignment shortcuts
 {
   config = builtins.readFile ./config.vim;
-  plugins = [ "vim-easy-align" ];
+  plugins = ["vim-easy-align"];
 }

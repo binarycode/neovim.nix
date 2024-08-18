@@ -1,6 +1,9 @@
 {
   inputs = {
-    flake-utils.url = github:numtide/flake-utils;
+    flake-parts = {
+      inputs.nixpkgs-lib.follows = "nixpkgs";
+      url = github:hercules-ci/flake-parts;
+    };
     "neovim-plugin__ale" = {
       flake = false;
       url = github:dense-analysis/ale;
@@ -105,14 +108,15 @@
       flake = false;
       url = github:tpope/vim-unimpaired;
     };
-    nixpkgs.url = github:nixos/nixpkgs/nixpkgs-24.05-darwin;
+    nixpkgs.url = github:nixos/nixpkgs/nixos-24.05;
   };
 
   outputs = inputs: let
-    neovim = pkgs: import ./package.nix {
-      inherit inputs pkgs;
-    };
-    module = { pkgs, ... }: {
+    neovim = pkgs:
+      import ./package.nix {
+        inherit inputs pkgs;
+      };
+    module = {pkgs, ...}: {
       environment = {
         systemPackages = [
           (neovim pkgs)
@@ -123,28 +127,22 @@
         };
       };
     };
-  in {
-    nixosModules = {
-      default = module;
-      neovim  = module;
+  in
+    (inputs.flake-parts.lib.mkFlake {inherit inputs;} {
+      systems = ["x86_64-linux" "aarch64-darwin"];
+      perSystem = {pkgs, ...}: {
+        apps.neovim = {
+          type = "app";
+          program = neovim pkgs;
+        };
+        formatter = pkgs.alejandra;
+        devShells.default = pkgs.mkShell {
+          packages = [pkgs.alejandra];
+        };
+      };
+    })
+    // {
+      nixosModules.default = module;
+      darwinModules.default = module;
     };
-    darwinModules = {
-      default = module;
-      neovim  = module;
-    };
-  } // inputs.flake-utils.lib.eachDefaultSystem(system: let
-    pkgs = import inputs.nixpkgs {
-      inherit system;
-    };
-  in {
-    apps.neovim = inputs.flake-utils.lib.mkApp {
-      drv = neovim pkgs;
-      name = "nvim";
-    };
-    devShell = pkgs.mkShell {
-      packages = [
-        (neovim pkgs)
-      ];
-    };
-  });
 }

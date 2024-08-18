@@ -117,7 +117,7 @@
       perSystem = {pkgs, ...}: {
         apps.neovim = {
           type = "app";
-          program = import ./package.nix inputs {
+          program = import ./package.nix {
             inherit pkgs;
           };
         };
@@ -128,7 +128,7 @@
       };
     })
     // {
-      nixosModules.default = import ./module.nix inputs;
-      darwinModules.default = import ./module.nix inputs;
+      nixosModules.default = import ./module.nix;
+      darwinModules.default = import ./module.nix;
     };
 }

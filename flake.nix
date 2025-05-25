@@ -108,7 +108,7 @@
       flake = false;
       url = github:tpope/vim-unimpaired;
     };
-    nixpkgs.url = github:nixos/nixpkgs/nixos-24.05;
+    nixpkgs.url = github:nixos/nixpkgs/nixos-25.05;
   };
 
   outputs = inputs:

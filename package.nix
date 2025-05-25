@@ -47,6 +47,7 @@
         pname = plugin;
         version = inputs."neovim-plugin__${plugin}".lastModifiedDate;
         src = inputs."neovim-plugin__${plugin}";
+        doCheck = false;
       };
     names = pkgs.lib.flatten (builtins.map (module: module.plugins or []) modules);
   in

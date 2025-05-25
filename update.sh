@@ -9,7 +9,6 @@ nix flake lock --update-input neovim-plugin__lightline_vim
 nix flake lock --update-input neovim-plugin__monokai_nvim
 nix flake lock --update-input neovim-plugin__nerdcommenter
 nix flake lock --update-input neovim-plugin__nvim-hlslens
-nix flake lock --update-input neovim-plugin__nvim-treesitter-endwise
 nix flake lock --update-input neovim-plugin__plenary_nvim
 nix flake lock --update-input neovim-plugin__popup_nvim
 nix flake lock --update-input neovim-plugin__supertab

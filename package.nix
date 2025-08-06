@@ -16,6 +16,7 @@
     (import ./editorconfig-vim)
     (import ./gitsigns-nvim)
     (import ./hop-nvim)
+    (import ./kcl-nvim)
     (import ./leap-nvim)
     (import ./lightline-vim)
     (import ./nclipper-vim)

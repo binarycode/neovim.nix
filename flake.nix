@@ -20,6 +20,10 @@
       flake = false;
       url = github:phaazon/hop.nvim;
     };
+    "neovim-plugin__kcl_nvim" = {
+      flake = false;
+      url = github:kcl-lang/kcl.nvim;
+    };
     "neovim-plugin__leap_nvim" = {
       flake = false;
       url = github:ggandor/leap.nvim;

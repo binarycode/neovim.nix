@@ -84,6 +84,22 @@
         "type": "github"
       }
     },
+    "neovim-plugin__kcl_nvim": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1726048306,
+        "narHash": "sha256-8tslNwnprsrhRjW6Wf+pzVvtJyfVUIslb1Sg5X5ERpc=",
+        "owner": "kcl-lang",
+        "repo": "kcl.nvim",
+        "rev": "beededb5a8ed01ba2d121ed053aa6380ecb59597",
+        "type": "github"
+      },
+      "original": {
+        "owner": "kcl-lang",
+        "repo": "kcl.nvim",
+        "type": "github"
+      }
+    },
     "neovim-plugin__leap_nvim": {
       "flake": false,
       "locked": {
@@ -460,6 +476,7 @@
         "neovim-plugin__editorconfig-vim": "neovim-plugin__editorconfig-vim",
         "neovim-plugin__gitsigns_nvim": "neovim-plugin__gitsigns_nvim",
         "neovim-plugin__hop_nvim": "neovim-plugin__hop_nvim",
+        "neovim-plugin__kcl_nvim": "neovim-plugin__kcl_nvim",
         "neovim-plugin__leap_nvim": "neovim-plugin__leap_nvim",
         "neovim-plugin__lightline_vim": "neovim-plugin__lightline_vim",
         "neovim-plugin__monokai_nvim": "neovim-plugin__monokai_nvim",

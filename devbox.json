@@ -1,0 +1,20 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jetify-com/devbox/0.14.2/.schema/devbox.schema.json",
+  "packages": [
+    "alejandra@latest",
+    "bash-language-server@latest",
+    "just@latest",
+    "lua-language-server@latest",
+    "nil@latest",
+    "prettier@latest",
+    "shfmt@latest",
+    "stylua@latest",
+    "taplo@latest",
+    "treefmt@latest",
+    "vscode-json-languageserver@latest",
+    "yaml-language-server@latest"
+  ],
+  "env": {
+    "PATH": "${PATH}:${DEVBOX_WD}/bin"
+  }
+}

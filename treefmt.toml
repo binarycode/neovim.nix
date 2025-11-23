@@ -1,0 +1,30 @@
+on-unmatched = "fatal"
+
+excludes = [".gitignore", "devbox.lock", "flake.lock"]
+
+[formatter.alejandra]
+command = "alejandra"
+includes = ["*.nix"]
+
+[formatter.just]
+command = "justfmt"
+includes = ["justfile"]
+
+[formatter.prettier]
+command = "prettier"
+options = ["--write", "--no-bracket-spacing"]
+includes = ["*.json", "*.yaml"]
+
+[formatter.shfmt]
+command = "shfmt"
+options = ["--write", "--indent", "2"]
+includes = [".envrc", "bin/justfmt"]
+
+[formatter.stylua]
+command = "stylua"
+includes = ["*.lua"]
+
+[formatter.taplo]
+command = "taplo"
+options = ["format"]
+includes = ["*.toml"]

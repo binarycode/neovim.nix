@@ -4,135 +4,89 @@
       inputs.nixpkgs-lib.follows = "nixpkgs";
       url = github:hercules-ci/flake-parts;
     };
-    "neovim-plugin__ale" = {
-      flake = false;
-      url = github:dense-analysis/ale;
+
+    nixpkgs.url = github:nixos/nixpkgs/nixos-25.05;
+
+    nixvim = {
+      inputs = {
+        flake-parts.follows = "flake-parts";
+        nixpkgs.follows = "nixpkgs";
+        systems.follows = "systems";
+      };
+      url = github:nix-community/nixvim/nixos-25.05;
     };
-    "neovim-plugin__editorconfig-vim" = {
-      flake = false;
-      url = github:editorconfig/editorconfig-vim;
-    };
-    "neovim-plugin__gitsigns_nvim" = {
-      flake = false;
-      url = github:lewis6991/gitsigns.nvim;
-    };
-    "neovim-plugin__hop_nvim" = {
-      flake = false;
-      url = github:phaazon/hop.nvim;
-    };
-    "neovim-plugin__kcl_nvim" = {
-      flake = false;
-      url = github:kcl-lang/kcl.nvim;
-    };
-    "neovim-plugin__leap_nvim" = {
-      flake = false;
-      url = github:ggandor/leap.nvim;
-    };
-    "neovim-plugin__lightline_vim" = {
-      flake = false;
-      url = github:itchyny/lightline.vim;
-    };
-    "neovim-plugin__monokai_nvim" = {
-      flake = false;
-      url = github:tanvirtin/monokai.nvim;
-    };
-    "neovim-plugin__nerdcommenter" = {
-      flake = false;
-      url = github:preservim/nerdcommenter;
-    };
-    "neovim-plugin__nvim-hlslens" = {
-      flake = false;
-      url = github:kevinhwang91/nvim-hlslens;
-    };
-    "neovim-plugin__nvim-treesitter-endwise" = {
-      flake = false;
-      url = github:RRethy/nvim-treesitter-endwise;
-    };
-    "neovim-plugin__plenary_nvim" = {
-      flake = false;
-      url = github:nvim-lua/plenary.nvim;
-    };
-    "neovim-plugin__popup_nvim" = {
-      flake = false;
-      url = github:nvim-lua/popup.nvim;
-    };
-    "neovim-plugin__supertab" = {
-      flake = false;
-      url = github:ervandew/supertab;
-    };
-    "neovim-plugin__telescope_nvim" = {
-      flake = false;
-      url = github:nvim-telescope/telescope.nvim?ref=0.1.x;
-    };
-    "neovim-plugin__vim-coffee-script" = {
-      flake = false;
-      url = github:kchmck/vim-coffee-script;
-    };
-    "neovim-plugin__vim-easy-align" = {
-      flake = false;
-      url = github:junegunn/vim-easy-align;
-    };
-    "neovim-plugin__vim-eunuch" = {
-      flake = false;
-      url = github:tpope/vim-eunuch;
-    };
-    "neovim-plugin__vim-filebeagle" = {
+
+    plugin-filebeagle = {
       flake = false;
       url = github:tobiwild/vim-filebeagle;
     };
-    "neovim-plugin__vim-fugitive" = {
+
+    plugin-monokai = {
       flake = false;
-      url = github:tpope/vim-fugitive;
+      url = github:tanvirtin/monokai.nvim;
     };
-    "neovim-plugin__vim-grepper" = {
-      flake = false;
-      url = github:mhinz/vim-grepper;
-    };
-    "neovim-plugin__vim-kickstart" = {
-      flake = false;
-      url = github:tangledhelix/vim-kickstart;
-    };
-    "neovim-plugin__vim-plugin-ruscmd" = {
+
+    plugin-ruscmd = {
       flake = false;
       url = github:powerman/vim-plugin-ruscmd;
     };
-    "neovim-plugin__vim-repeat" = {
-      flake = false;
-      url = github:tpope/vim-repeat;
+
+    systems.url = github:nix-systems/default;
+
+    treefmt-nix = {
+      inputs.nixpkgs.follows = "nixpkgs";
+      url = github:numtide/treefmt-nix;
     };
-    "neovim-plugin__vim-rooter" = {
-      flake = false;
-      url = github:airblade/vim-rooter;
-    };
-    "neovim-plugin__vim-surround" = {
-      flake = false;
-      url = github:tpope/vim-surround;
-    };
-    "neovim-plugin__vim-unimpaired" = {
-      flake = false;
-      url = github:tpope/vim-unimpaired;
-    };
-    nixpkgs.url = github:nixos/nixpkgs/nixos-25.05;
   };
 
   outputs = inputs:
-    (inputs.flake-parts.lib.mkFlake {inherit inputs;} {
-      systems = ["x86_64-linux" "aarch64-darwin"];
-      perSystem = {pkgs, ...}: {
-        apps.neovim = {
-          type = "app";
-          program = import ./package.nix {
-            inherit inputs pkgs;
+    inputs.flake-parts.lib.mkFlake {inherit inputs;} {
+      systems = import inputs.systems;
+
+      imports = [
+        inputs.treefmt-nix.flakeModule
+      ];
+
+      perSystem = {
+        config,
+        pkgs,
+        system,
+        ...
+      }: let
+        module = path: {
+          inherit system;
+          module = import path;
+          extraSpecialArgs = {
+            inherit inputs;
+            pkgs = inputs.nixpkgs.legacyPackages.${system};
           };
         };
-        formatter = pkgs.alejandra;
+      in {
+        checks = {
+          default = inputs.nixvim.lib.${system}.check.mkTestDerivationFromNixvimModule (module ./config);
+          vscode = inputs.nixvim.lib.${system}.check.mkTestDerivationFromNixvimModule (module ./config/vscode.nix);
+        };
+
         devShells.default = pkgs.mkShell {
-          packages = [pkgs.alejandra];
+          inputsFrom = [
+            config.treefmt.build.devShell
+          ];
+        };
+
+        packages = {
+          default = inputs.nixvim.legacyPackages.${system}.makeNixvimWithModule (module ./config);
+          vscode = inputs.nixvim.legacyPackages.${system}.makeNixvimWithModule (module ./config/vscode.nix);
+        };
+
+        treefmt.config = {
+          flakeFormatter = true;
+          projectRootFile = "flake.nix";
+          programs = {
+            alejandra.enable = true;
+            prettier.enable = true;
+            taplo.enable = true;
+          };
         };
       };
-    })
-    // {
-      nixosModules.default = import ./module.nix inputs;
-      darwinModules.default = import ./module.nix inputs;
     };
 }

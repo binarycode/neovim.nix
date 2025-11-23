@@ -1,0 +1,20 @@
+{
+  imports = [
+    ./_base
+    ./_experimental
+    ./_filetypes
+    ./editorconfig-vim
+    ./hop
+    ./leap-nvim
+    ./monokai
+    ./nerdcommenter
+    ./nvim-hlslens
+    ./nvim-surround
+    ./repeat
+    ./treesitter
+    ./vim-easy-align
+    ./vim-eunuch
+    ./vim-grepper
+    ./vim-plugin-ruscmd
+  ];
+}

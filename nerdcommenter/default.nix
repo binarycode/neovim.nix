@@ -1,4 +1,0 @@
-# commenting shortcuts
-{
-  plugins = ["nerdcommenter"];
-}

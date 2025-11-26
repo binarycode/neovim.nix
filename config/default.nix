@@ -1,8 +1,5 @@
 {
   imports = [
-    ./_base
-    ./_experimental
-    ./_filetypes
     ./ale
     ./editorconfig-vim
     ./fugitive
@@ -23,5 +20,8 @@
     ./vim-filebeagle
     ./vim-grepper
     ./vim-plugin-ruscmd
+    ./_filetypes
+    ./_experimental
+    ./_base
   ];
 }

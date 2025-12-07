@@ -5,7 +5,7 @@
       url = github:hercules-ci/flake-parts;
     };
 
-    nixpkgs.url = github:nixos/nixpkgs/nixos-25.05;
+    nixpkgs.url = github:nixos/nixpkgs/nixos-25.11;
 
     nixvim = {
       inputs = {
@@ -13,7 +13,7 @@
         nixpkgs.follows = "nixpkgs";
         systems.follows = "systems";
       };
-      url = github:nix-community/nixvim/nixos-25.05;
+      url = github:nix-community/nixvim/nixos-25.11;
     };
 
     plugin-filebeagle = {

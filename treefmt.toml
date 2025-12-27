@@ -1,0 +1,31 @@
+on-unmatched = "error"
+
+excludes = ["devbox.lock", "flake.lock", "*.vim"]
+
+[formatter.alejandra]
+command = "alejandra"
+includes = ["*.nix"]
+
+[formatter.just]
+command = "just"
+options = ["--unstable", "--fmt", "--justfile"]
+includes = ["justfile"]
+
+[formatter.prettier]
+command = "prettier"
+options = ["--write", "--no-bracket-spacing"]
+includes = ["*.json", "*.md", "*.yml"]
+
+[formatter.shfmt]
+command = "shfmt"
+options = ["--write", "--indent", "2"]
+includes = [".envrc", ".gitignore"]
+
+[formatter.stylua]
+command = "stylua"
+includes = ["*.lua"]
+
+[formatter.taplo]
+command = "taplo"
+options = ["format"]
+includes = ["*.toml"]

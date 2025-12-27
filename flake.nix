@@ -32,20 +32,11 @@
     };
 
     systems.url = github:nix-systems/default;
-
-    treefmt-nix = {
-      inputs.nixpkgs.follows = "nixpkgs";
-      url = github:numtide/treefmt-nix;
-    };
   };
 
   outputs = inputs:
     inputs.flake-parts.lib.mkFlake {inherit inputs;} {
       systems = import inputs.systems;
-
-      imports = [
-        inputs.treefmt-nix.flakeModule
-      ];
 
       perSystem = {
         config,
@@ -67,25 +58,9 @@
           vscode = inputs.nixvim.lib.${system}.check.mkTestDerivationFromNixvimModule (module ./config/vscode.nix);
         };
 
-        devShells.default = pkgs.mkShell {
-          inputsFrom = [
-            config.treefmt.build.devShell
-          ];
-        };
-
         packages = {
           default = inputs.nixvim.legacyPackages.${system}.makeNixvimWithModule (module ./config);
           vscode = inputs.nixvim.legacyPackages.${system}.makeNixvimWithModule (module ./config/vscode.nix);
-        };
-
-        treefmt.config = {
-          flakeFormatter = true;
-          projectRootFile = "flake.nix";
-          programs = {
-            alejandra.enable = true;
-            prettier.enable = true;
-            taplo.enable = true;
-          };
         };
       };
     };

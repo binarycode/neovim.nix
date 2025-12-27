@@ -11,6 +11,7 @@
       inputs = {
         flake-parts.follows = "flake-parts";
         nixpkgs.follows = "nixpkgs";
+        nuschtosSearch.inputs.flake-utils.inputs.systems.follows = "systems";
         systems.follows = "systems";
       };
       url = github:nix-community/nixvim/nixos-25.11;

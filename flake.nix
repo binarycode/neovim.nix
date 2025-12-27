@@ -13,7 +13,7 @@
         nixpkgs.follows = "nixpkgs";
         systems.follows = "systems";
       };
-      url = github:nix-community/nixvim/d73eb6f14221f12b6009b63b1bd6749f73d37f9a;
+      url = github:nix-community/nixvim/nixos-25.11;
     };
 
     plugin-filebeagle = {

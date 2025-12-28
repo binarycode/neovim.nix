@@ -135,22 +135,6 @@
         "type": "github"
       }
     },
-    "plugin-filebeagle": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1553460539,
-        "narHash": "sha256-eTRCfo87WtxUJN8t61D3z8d20Pqq60gj8NmQyCt9Vwg=",
-        "owner": "tobiwild",
-        "repo": "vim-filebeagle",
-        "rev": "2b9ab186c486c98896bc3fb178867b6603d75fb1",
-        "type": "github"
-      },
-      "original": {
-        "owner": "tobiwild",
-        "repo": "vim-filebeagle",
-        "type": "github"
-      }
-    },
     "plugin-monokai": {
       "flake": false,
       "locked": {
@@ -167,30 +151,12 @@
         "type": "github"
       }
     },
-    "plugin-ruscmd": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1725958517,
-        "narHash": "sha256-GXwcfoK+A6aS48usdp70ZdGipQz2OpMXo24NV3eK8BQ=",
-        "owner": "powerman",
-        "repo": "vim-plugin-ruscmd",
-        "rev": "b4c6cf0b4ff76641d84c2ea1e90ab258f8ff7415",
-        "type": "github"
-      },
-      "original": {
-        "owner": "powerman",
-        "repo": "vim-plugin-ruscmd",
-        "type": "github"
-      }
-    },
     "root": {
       "inputs": {
         "flake-parts": "flake-parts",
         "nixpkgs": "nixpkgs",
         "nixvim": "nixvim",
-        "plugin-filebeagle": "plugin-filebeagle",
         "plugin-monokai": "plugin-monokai",
-        "plugin-ruscmd": "plugin-ruscmd",
         "systems": "systems"
       }
     },

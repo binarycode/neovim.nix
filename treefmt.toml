@@ -1,6 +1,6 @@
 on-unmatched = "error"
 
-excludes = ["devbox.lock", "flake.lock", "*.vim"]
+excludes = ["devbox.lock", "flake.lock"]
 
 [formatter.alejandra]
 command = "alejandra"

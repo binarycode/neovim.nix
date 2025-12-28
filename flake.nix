@@ -17,19 +17,9 @@
       url = github:nix-community/nixvim/nixos-25.11;
     };
 
-    plugin-filebeagle = {
-      flake = false;
-      url = github:tobiwild/vim-filebeagle;
-    };
-
     plugin-monokai = {
       flake = false;
       url = github:tanvirtin/monokai.nvim;
-    };
-
-    plugin-ruscmd = {
-      flake = false;
-      url = github:powerman/vim-plugin-ruscmd;
     };
 
     systems.url = github:nix-systems/default;
@@ -50,18 +40,17 @@
           module = import path;
           extraSpecialArgs = {
             inherit inputs;
-            pkgs = inputs.nixpkgs.legacyPackages.${system};
           };
         };
       in {
         checks = {
-          default = inputs.nixvim.lib.${system}.check.mkTestDerivationFromNixvimModule (module ./config);
-          vscode = inputs.nixvim.lib.${system}.check.mkTestDerivationFromNixvimModule (module ./config/vscode.nix);
+          default = inputs.nixvim.lib.${system}.check.mkTestDerivationFromNixvimModule (module ./neovim-full.nix);
+          vscode = inputs.nixvim.lib.${system}.check.mkTestDerivationFromNixvimModule (module ./neovim-vscode.nix);
         };
 
         packages = {
-          default = inputs.nixvim.legacyPackages.${system}.makeNixvimWithModule (module ./config);
-          vscode = inputs.nixvim.legacyPackages.${system}.makeNixvimWithModule (module ./config/vscode.nix);
+          default = inputs.nixvim.legacyPackages.${system}.makeNixvimWithModule (module ./neovim-full.nix);
+          vscode = inputs.nixvim.legacyPackages.${system}.makeNixvimWithModule (module ./neovim-vscode.nix);
         };
       };
     };

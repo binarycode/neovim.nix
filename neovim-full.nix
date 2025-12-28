@@ -1,0 +1,27 @@
+{
+  imports = [
+    ./plugins/ale
+    ./plugins/editorconfig-vim
+    ./plugins/fugitive
+    ./plugins/gitsigns
+    ./plugins/hop
+    ./plugins/leap-nvim
+    ./plugins/lightline-vim
+    ./plugins/mini-comment
+    ./plugins/mini-files
+    ./plugins/mini-indentscope
+    ./plugins/mini-surround
+    ./plugins/mini-trailspace
+    ./plugins/monokai
+    ./plugins/nvim-hlslens
+    ./plugins/repeat
+    ./plugins/supertab
+    ./plugins/telescope
+    ./plugins/treesitter
+    ./plugins/vim-eunuch
+    ./plugins/vim-grepper
+    ./config/filetypes
+    ./config/tab-navigation
+    ./config/base
+  ];
+}

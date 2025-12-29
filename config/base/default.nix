@@ -1,3 +1,3 @@
 {
-  extraConfigLua = builtins.readFile ./config.lua;
+  extraConfigLuaPre = builtins.readFile ./config.lua;
 }

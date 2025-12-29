@@ -1,82 +1,84 @@
--- compact signs
-vim.opt.signcolumn = "number"
+do
+  -- compact signs
+  vim.opt.signcolumn = "number"
 
--- replace tabs with spaces
-vim.opt.expandtab = true
+  -- replace tabs with spaces
+  vim.opt.expandtab = true
 
--- number of spaces for each indent step
-vim.opt.shiftwidth = 2
+  -- number of spaces for each indent step
+  vim.opt.shiftwidth = 2
 
--- tab size for editing operations (like <Tab> and <BS>)
-vim.opt.softtabstop = 2
+  -- tab size for editing operations (like <Tab> and <BS>)
+  vim.opt.softtabstop = 2
 
--- editing operations use softtabstop value
-vim.opt.smarttab = true
+  -- editing operations use softtabstop value
+  vim.opt.smarttab = true
 
--- show line numbers
-vim.opt.number = true
+  -- show line numbers
+  vim.opt.number = true
 
--- highlight all search matches
-vim.opt.hlsearch = true
+  -- highlight all search matches
+  vim.opt.hlsearch = true
 
--- incremental search
-vim.opt.incsearch = true
+  -- incremental search
+  vim.opt.incsearch = true
 
--- enable modeline
-vim.opt.modeline = true
+  -- enable modeline
+  vim.opt.modeline = true
 
--- redraw only when needed
-vim.opt.lazyredraw = true
+  -- redraw only when needed
+  vim.opt.lazyredraw = true
 
--- make whitespace visible
-vim.opt.list = false
-vim.opt.listchars = {
-  space = "⋅",
-  eol = "↴",
-}
+  -- make whitespace visible
+  vim.opt.list = false
+  vim.opt.listchars = {
+    space = "⋅",
+    eol = "↴",
+  }
 
--- use clipboard for all operations
-vim.opt.clipboard:append("unnamedplus")
+  -- use clipboard for all operations
+  vim.opt.clipboard:append("unnamedplus")
 
--- make vim work correctly with watch/livereload tools
-vim.opt.backupcopy = "yes"
-vim.opt.backupdir = "/tmp//"
-vim.opt.directory = "/tmp//"
+  -- make vim work correctly with watch/livereload tools
+  vim.opt.backupcopy = "yes"
+  vim.opt.backupdir = "/tmp//"
+  vim.opt.directory = "/tmp//"
 
--- always use vertical diffs
-vim.opt.diffopt:append("vertical")
+  -- always use vertical diffs
+  vim.opt.diffopt:append("vertical")
 
--- use spacebar as Leader
-vim.g.mapleader = " "
+  -- use spacebar as Leader
+  vim.g.mapleader = " "
 
--- split navigation
-vim.keymap.set("n", "<Up>", "<C-w>k", { silent = true })
-vim.keymap.set("n", "<Down>", "<C-w>j", { silent = true })
-vim.keymap.set("n", "<Left>", "<C-w>h", { silent = true })
-vim.keymap.set("n", "<Right>", "<C-w>l", { silent = true })
+  -- split navigation
+  vim.keymap.set("n", "<Up>", "<C-w>k", { silent = true })
+  vim.keymap.set("n", "<Down>", "<C-w>j", { silent = true })
+  vim.keymap.set("n", "<Left>", "<C-w>h", { silent = true })
+  vim.keymap.set("n", "<Right>", "<C-w>l", { silent = true })
 
-vim.keymap.set("n", "<C-j>", "<C-w>j", { silent = true })
-vim.keymap.set("n", "<C-k>", "<C-w>k", { silent = true })
-vim.keymap.set("n", "<C-h>", "<C-w>h", { silent = true })
-vim.keymap.set("n", "<C-l>", "<C-w>l", { silent = true })
+  vim.keymap.set("n", "<C-j>", "<C-w>j", { silent = true })
+  vim.keymap.set("n", "<C-k>", "<C-w>k", { silent = true })
+  vim.keymap.set("n", "<C-h>", "<C-w>h", { silent = true })
+  vim.keymap.set("n", "<C-l>", "<C-w>l", { silent = true })
 
--- cursor line stays centered
-vim.opt.scrolloff = 999
+  -- cursor line stays centered
+  vim.opt.scrolloff = 999
 
--- statusline always visible
-vim.opt.laststatus = 2
+  -- statusline always visible
+  vim.opt.laststatus = 2
 
--- allow backspacing over everything
-vim.opt.backspace = { "indent", "eol", "start" }
+  -- allow backspacing over everything
+  vim.opt.backspace = { "indent", "eol", "start" }
 
--- hide search highlight on escape
-vim.keymap.set("n", "<Esc>", ":noh<CR><Esc>", { silent = true })
+  -- hide search highlight on escape
+  vim.keymap.set("n", "<Esc>", ":noh<CR><Esc>", { silent = true })
 
--- copy current file path to clipboard
-vim.keymap.set("n", ",cs", function()
-  vim.fn.setreg("+", vim.fn.fnamemodify(vim.fn.expand("%"), ":~:."))
-end)
+  -- copy current file path to clipboard
+  vim.keymap.set("n", ",cs", function()
+    vim.fn.setreg("+", vim.fn.fnamemodify(vim.fn.expand("%"), ":~:."))
+  end)
 
-vim.keymap.set("n", ",cl", function()
-  vim.fn.setreg("+", vim.fn.expand("%:p"))
-end)
+  vim.keymap.set("n", ",cl", function()
+    vim.fn.setreg("+", vim.fn.expand("%:p"))
+  end)
+end

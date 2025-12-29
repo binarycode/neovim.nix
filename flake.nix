@@ -44,13 +44,24 @@
         };
       in {
         checks = {
-          default = inputs.nixvim.lib.${system}.check.mkTestDerivationFromNixvimModule (module ./neovim-full.nix);
-          vscode = inputs.nixvim.lib.${system}.check.mkTestDerivationFromNixvimModule (module ./neovim-vscode.nix);
+          neovim-full = inputs.nixvim.lib.${system}.check.mkTestDerivationFromNixvimModule (module ./neovim-full.nix);
+          neovim-vscode = inputs.nixvim.lib.${system}.check.mkTestDerivationFromNixvimModule (module ./neovim-vscode.nix);
         };
 
-        packages = {
-          default = inputs.nixvim.legacyPackages.${system}.makeNixvimWithModule (module ./neovim-full.nix);
-          vscode = inputs.nixvim.legacyPackages.${system}.makeNixvimWithModule (module ./neovim-vscode.nix);
+        packages = rec {
+          default = neovim-full;
+          neovim-full = inputs.nixvim.legacyPackages.${system}.makeNixvimWithModule (module ./neovim-full.nix);
+
+          neovim-vscode = let
+            neovim-vscode = inputs.nixvim.legacyPackages.${system}.makeNixvimWithModule (module ./neovim-vscode.nix);
+          in
+            pkgs.symlinkJoin {
+              name = "neovim-vscode";
+              paths = [neovim-vscode];
+              postBuild = ''
+                mv $out/bin/nvim $out/bin/nvim-vscode
+              '';
+            };
         };
       };
     };

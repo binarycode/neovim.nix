@@ -1,4 +1,6 @@
-do
+if not vim.g.vscode then
+  vim.cmd.packadd("ale")
+
   vim.g.ale_lint_on_text_changed = 0
   vim.g.ale_lint_on_insert_leave = 0
 

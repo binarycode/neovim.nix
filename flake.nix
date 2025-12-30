@@ -17,6 +17,11 @@
       url = github:nix-community/nixvim/nixos-25.11;
     };
 
+    plugin-filebeagle = {
+      flake = false;
+      url = github:tobiwild/vim-filebeagle;
+    };
+
     plugin-monokai = {
       flake = false;
       url = github:tanvirtin/monokai.nvim;
@@ -43,25 +48,11 @@
           };
         };
       in {
-        checks = {
-          neovim-full = inputs.nixvim.lib.${system}.check.mkTestDerivationFromNixvimModule (module ./neovim-full.nix);
-          neovim-vscode = inputs.nixvim.lib.${system}.check.mkTestDerivationFromNixvimModule (module ./neovim-vscode.nix);
-        };
+        checks.neovim = inputs.nixvim.lib.${system}.check.mkTestDerivationFromNixvimModule (module ./neovim.nix);
 
         packages = rec {
-          default = neovim-full;
-          neovim-full = inputs.nixvim.legacyPackages.${system}.makeNixvimWithModule (module ./neovim-full.nix);
-
-          neovim-vscode = let
-            neovim-vscode = inputs.nixvim.legacyPackages.${system}.makeNixvimWithModule (module ./neovim-vscode.nix);
-          in
-            pkgs.symlinkJoin {
-              name = "neovim-vscode";
-              paths = [neovim-vscode];
-              postBuild = ''
-                mv $out/bin/nvim $out/bin/nvim-vscode
-              '';
-            };
+          default = neovim;
+          neovim = inputs.nixvim.legacyPackages.${system}.makeNixvimWithModule (module ./neovim.nix);
         };
       };
     };

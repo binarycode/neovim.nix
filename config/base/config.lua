@@ -73,6 +73,10 @@ do
   -- hide search highlight on escape
   vim.keymap.set("n", "<Esc>", ":noh<CR><Esc>", { silent = true })
 
+  -- quick page scrolling
+  vim.keymap.set({ "n", "v" }, "J", "<PageDown>")
+  vim.keymap.set({ "n", "v" }, "K", "<PageUp>")
+
   -- copy current file path to clipboard
   vim.keymap.set("n", ",cs", function()
     vim.fn.setreg("+", vim.fn.fnamemodify(vim.fn.expand("%"), ":~:."))

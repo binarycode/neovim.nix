@@ -1,5 +1,10 @@
 {pkgs, ...}: {
-  extraPlugins = [pkgs.vimPlugins.vim-grepper];
+  extraPlugins = [
+    {
+      plugin = pkgs.vimPlugins.vim-grepper;
+      optional = true;
+    }
+  ];
 
   extraConfigLua = builtins.readFile ./config.lua;
 }

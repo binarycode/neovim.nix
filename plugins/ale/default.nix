@@ -1,5 +1,10 @@
 {pkgs, ...}: {
-  extraPlugins = [pkgs.vimPlugins.ale];
+  extraPlugins = [
+    {
+      plugin = pkgs.vimPlugins.ale;
+      optional = true;
+    }
+  ];
 
   extraConfigLua = builtins.readFile ./config.lua;
 }

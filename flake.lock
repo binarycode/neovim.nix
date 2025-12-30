@@ -135,6 +135,22 @@
         "type": "github"
       }
     },
+    "plugin-filebeagle": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1553460539,
+        "narHash": "sha256-eTRCfo87WtxUJN8t61D3z8d20Pqq60gj8NmQyCt9Vwg=",
+        "owner": "tobiwild",
+        "repo": "vim-filebeagle",
+        "rev": "2b9ab186c486c98896bc3fb178867b6603d75fb1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "tobiwild",
+        "repo": "vim-filebeagle",
+        "type": "github"
+      }
+    },
     "plugin-monokai": {
       "flake": false,
       "locked": {
@@ -156,6 +172,7 @@
         "flake-parts": "flake-parts",
         "nixpkgs": "nixpkgs",
         "nixvim": "nixvim",
+        "plugin-filebeagle": "plugin-filebeagle",
         "plugin-monokai": "plugin-monokai",
         "systems": "systems"
       }

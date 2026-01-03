@@ -1,7 +1,6 @@
 {
   imports = [
     ./plugins/ale
-    ./plugins/editorconfig-vim
     ./plugins/filebeagle
     ./plugins/fugitive
     ./plugins/gitsigns

@@ -2,10 +2,9 @@
   imports = [
     ./plugins/ale
     ./plugins/filebeagle
+    ./plugins/flash
     ./plugins/fugitive
     ./plugins/gitsigns
-    ./plugins/hop
-    ./plugins/leap-nvim
     ./plugins/lualine
     ./plugins/mini-indentscope
     ./plugins/mini-surround

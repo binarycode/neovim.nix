@@ -1,3 +1,3 @@
 if not vim.g.vscode then
-  require("lz.n").trigger_load("gitsigns")
+  require("lz.n").trigger_load("gitsigns.nvim")
 end

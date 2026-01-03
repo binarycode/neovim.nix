@@ -1,4 +1,4 @@
-do
+if not vim.g.vscode then
   vim.cmd.packadd("vim-grepper")
 
   vim.keymap.set("n", "<Leader>gr", ":GrepperRg<Space>", { noremap = true, silent = true })

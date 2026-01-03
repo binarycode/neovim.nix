@@ -6,7 +6,7 @@
     ./plugins/gitsigns
     ./plugins/hop
     ./plugins/leap-nvim
-    ./plugins/lightline-vim
+    ./plugins/lualine
     ./plugins/mini-indentscope
     ./plugins/mini-surround
     ./plugins/mini-trailspace

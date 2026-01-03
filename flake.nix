@@ -22,9 +22,9 @@
       url = github:tobiwild/vim-filebeagle;
     };
 
-    plugin-monokai = {
+    plugin-monokai-nightasty = {
       flake = false;
-      url = github:tanvirtin/monokai.nvim;
+      url = github:polirritmico/monokai-nightasty.nvim;
     };
 
     systems.url = github:nix-systems/default;

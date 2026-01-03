@@ -151,19 +151,19 @@
         "type": "github"
       }
     },
-    "plugin-monokai": {
+    "plugin-monokai-nightasty": {
       "flake": false,
       "locked": {
-        "lastModified": 1674050493,
-        "narHash": "sha256-Q6+la2P2L1QmdsRKszBBMee8oLXHwdJGWjG/FMMFgT0=",
-        "owner": "tanvirtin",
-        "repo": "monokai.nvim",
-        "rev": "b8bd44d5796503173627d7a1fc51f77ec3a08a63",
+        "lastModified": 1765751144,
+        "narHash": "sha256-LFhbeQeDlETtVyr4qx1XNImR7/GS8DoKWOp6B+Udx/8=",
+        "owner": "polirritmico",
+        "repo": "monokai-nightasty.nvim",
+        "rev": "8be5e1c6e1d59873505e81b161e923264dfa5c1a",
         "type": "github"
       },
       "original": {
-        "owner": "tanvirtin",
-        "repo": "monokai.nvim",
+        "owner": "polirritmico",
+        "repo": "monokai-nightasty.nvim",
         "type": "github"
       }
     },
@@ -173,7 +173,7 @@
         "nixpkgs": "nixpkgs",
         "nixvim": "nixvim",
         "plugin-filebeagle": "plugin-filebeagle",
-        "plugin-monokai": "plugin-monokai",
+        "plugin-monokai-nightasty": "plugin-monokai-nightasty",
         "systems": "systems"
       }
     },

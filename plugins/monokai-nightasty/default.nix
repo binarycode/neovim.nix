@@ -5,9 +5,9 @@
 }: {
   extraPlugins = [
     (pkgs.vimUtils.buildVimPlugin {
-      pname = "monokai";
-      version = inputs.plugin-monokai.lastModifiedDate;
-      src = inputs.plugin-monokai;
+      pname = "monokai-nightasty";
+      version = inputs.plugin-monokai-nightasty.lastModifiedDate;
+      src = inputs.plugin-monokai-nightasty;
     })
   ];
 

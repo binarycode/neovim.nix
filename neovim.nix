@@ -21,7 +21,7 @@
     ./config/tab-navigation
     ./config/base
 
-    ./plugins/monokai
+    ./plugins/monokai-nightasty
     ./plugins/lz-n
   ];
 }

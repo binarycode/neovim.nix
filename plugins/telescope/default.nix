@@ -3,7 +3,10 @@
     telescope = {
       enable = true;
       lazyLoad.settings.lazy = true;
-      keymaps."<Leader>o" = "find_files";
+      keymaps = {
+        "<Leader>gr" = "live_grep";
+        "<Leader>o" = "find_files";
+      };
     };
     web-devicons.enable = false;
   };

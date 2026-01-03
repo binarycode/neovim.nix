@@ -16,7 +16,6 @@
     ./plugins/telescope
     ./plugins/treesitter
     ./plugins/vim-eunuch
-    ./plugins/vim-grepper
 
     ./config/filetypes
     ./config/tab-navigation

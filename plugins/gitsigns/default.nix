@@ -6,5 +6,7 @@
     }
   ];
 
+  extraPackages = [pkgs.git];
+
   extraConfigLua = builtins.readFile ./config.lua;
 }

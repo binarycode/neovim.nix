@@ -14,7 +14,6 @@
     ./plugins/supertab
     ./plugins/telescope
     ./plugins/treesitter
-    ./plugins/vim-eunuch
 
     ./config/filetypes
     ./config/tab-navigation

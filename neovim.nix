@@ -1,5 +1,6 @@
 {
   imports = [
+    ./plugins/cmp
     ./plugins/flash
     ./plugins/fugitive
     ./plugins/gitsigns
@@ -11,7 +12,6 @@
     ./plugins/nvim-hlslens
     ./plugins/oil
     ./plugins/repeat
-    ./plugins/supertab
     ./plugins/telescope
     ./plugins/treesitter
 

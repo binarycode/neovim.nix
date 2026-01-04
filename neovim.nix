@@ -1,9 +1,9 @@
 {
   imports = [
-    ./plugins/ale
     ./plugins/flash
     ./plugins/fugitive
     ./plugins/gitsigns
+    ./plugins/lspconfig
     ./plugins/lualine
     ./plugins/mini-indentscope
     ./plugins/mini-surround
@@ -15,8 +15,9 @@
     ./plugins/telescope
     ./plugins/treesitter
 
-    ./config/filetypes
     ./config/tab-navigation
+    ./config/lsp
+    ./config/filetypes
     ./config/custom-menu
     ./config/base
 

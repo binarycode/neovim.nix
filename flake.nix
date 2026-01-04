@@ -2,10 +2,10 @@
   inputs = {
     flake-parts = {
       inputs.nixpkgs-lib.follows = "nixpkgs";
-      url = github:hercules-ci/flake-parts;
+      url = "github:hercules-ci/flake-parts";
     };
 
-    nixpkgs.url = github:nixos/nixpkgs/nixos-25.11;
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-25.11";
 
     nixvim = {
       inputs = {
@@ -14,15 +14,15 @@
         nuschtosSearch.inputs.flake-utils.inputs.systems.follows = "systems";
         systems.follows = "systems";
       };
-      url = github:nix-community/nixvim/nixos-25.11;
+      url = "github:nix-community/nixvim/nixos-25.11";
     };
 
     plugin-monokai-nightasty = {
       flake = false;
-      url = github:polirritmico/monokai-nightasty.nvim;
+      url = "github:polirritmico/monokai-nightasty.nvim";
     };
 
-    systems.url = github:nix-systems/default;
+    systems.url = "github:nix-systems/default";
   };
 
   outputs = inputs:

@@ -1,7 +1,7 @@
 {pkgs, ...}: {
   extraPlugins = [
     {
-      plugin = pkgs.vimPlugins.ale;
+      plugin = pkgs.vimPlugins.nvim-lspconfig;
       optional = true;
     }
   ];

@@ -17,11 +17,6 @@
       url = github:nix-community/nixvim/nixos-25.11;
     };
 
-    plugin-filebeagle = {
-      flake = false;
-      url = github:tobiwild/vim-filebeagle;
-    };
-
     plugin-monokai-nightasty = {
       flake = false;
       url = github:polirritmico/monokai-nightasty.nvim;

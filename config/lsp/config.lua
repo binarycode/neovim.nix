@@ -4,7 +4,7 @@ if not vim.g.vscode then
   })
 
   vim.lsp.enable({
-    "bash_ls",
+    "bashls",
     "jsonls",
     "lua_ls",
     "marksman",

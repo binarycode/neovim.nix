@@ -1,3 +1,10 @@
 if not vim.g.vscode then
-  require("lz.n").trigger_load("gitsigns.nvim")
+  vim.cmd.packadd("gitsigns.nvim")
+
+  vim.schedule(function()
+    require("gitsigns").setup({
+      numhl = true,
+      signcolumn = false,
+    })
+  end)
 end

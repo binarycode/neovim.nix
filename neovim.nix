@@ -1,7 +1,6 @@
 {
   imports = [
     ./plugins/ale
-    ./plugins/filebeagle
     ./plugins/flash
     ./plugins/fugitive
     ./plugins/gitsigns
@@ -10,6 +9,7 @@
     ./plugins/mini-surround
     ./plugins/mini-trailspace
     ./plugins/nvim-hlslens
+    ./plugins/oil
     ./plugins/repeat
     ./plugins/supertab
     ./plugins/telescope

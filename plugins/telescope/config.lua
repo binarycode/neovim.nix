@@ -1,7 +1,18 @@
 if not vim.g.vscode then
-  require("lz.n").trigger_load("telescope.nvim")
+  vim.cmd.packadd("telescope.nvim")
 
   vim.schedule(function()
+    require("telescope").setup({
+      pickers = {
+        find_files = {
+          disable_devicons = true,
+        },
+        live_grep = {
+          disable_devicons = true,
+        },
+      },
+    })
+
     local action_state = require("telescope.actions.state")
     local actions = require("telescope.actions")
     local builtin = require("telescope.builtin")
@@ -26,7 +37,11 @@ if not vim.g.vscode then
       })
     end
 
-    vim.keymap.set("n", "<leader>ggr", function()
+    vim.keymap.set("n", "<Leader>o", builtin.find_files)
+
+    vim.keymap.set("n", "<Leader>gr", builtin.live_grep)
+
+    vim.keymap.set("n", "<Leader>ggr", function()
       local find_command = {
         "git",
         "ls-tree",
@@ -38,7 +53,7 @@ if not vim.g.vscode then
       live_grep_dir(find_command)
     end, { noremap = true, silent = true })
 
-    vim.keymap.set("n", "<leader>gggr", function()
+    vim.keymap.set("n", "<Leader>gggr", function()
       local find_command = {
         "fd",
         "--unrestricted",

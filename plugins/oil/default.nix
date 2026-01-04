@@ -1,7 +1,7 @@
 {pkgs, ...}: {
   extraPlugins = [
     {
-      plugin = pkgs.vimPlugins.telescope-nvim;
+      plugin = pkgs.vimPlugins.oil-nvim;
       optional = true;
     }
   ];

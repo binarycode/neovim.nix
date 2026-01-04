@@ -51,11 +51,6 @@ do
   vim.g.mapleader = " "
 
   -- split navigation
-  vim.keymap.set("n", "<Up>", "<C-w>k", { silent = true })
-  vim.keymap.set("n", "<Down>", "<C-w>j", { silent = true })
-  vim.keymap.set("n", "<Left>", "<C-w>h", { silent = true })
-  vim.keymap.set("n", "<Right>", "<C-w>l", { silent = true })
-
   vim.keymap.set("n", "<C-j>", "<C-w>j", { silent = true })
   vim.keymap.set("n", "<C-k>", "<C-w>k", { silent = true })
   vim.keymap.set("n", "<C-h>", "<C-w>h", { silent = true })
@@ -76,13 +71,4 @@ do
   -- quick page scrolling
   vim.keymap.set({ "n", "v" }, "J", "<PageDown>")
   vim.keymap.set({ "n", "v" }, "K", "<PageUp>")
-
-  -- copy current file path to clipboard
-  vim.keymap.set("n", ",cs", function()
-    vim.fn.setreg("+", vim.fn.fnamemodify(vim.fn.expand("%"), ":~:."))
-  end)
-
-  vim.keymap.set("n", ",cl", function()
-    vim.fn.setreg("+", vim.fn.expand("%:p"))
-  end)
 end

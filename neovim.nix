@@ -17,6 +17,7 @@
 
     ./config/filetypes
     ./config/tab-navigation
+    ./config/custom-menu
     ./config/base
 
     ./plugins/monokai-nightasty

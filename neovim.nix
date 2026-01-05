@@ -1,6 +1,7 @@
 {
   imports = [
     ./plugins/cmp
+    ./plugins/fidget
     ./plugins/flash
     ./plugins/fugitive
     ./plugins/gitsigns

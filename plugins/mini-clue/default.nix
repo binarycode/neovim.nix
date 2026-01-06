@@ -1,5 +1,7 @@
 {pkgs, ...}: {
-  extraPlugins = [pkgs.vimPlugins.nvim-hlslens];
+  extraPlugins = [
+    pkgs.vimPlugins.mini-clue
+  ];
 
   extraConfigLua = builtins.readFile ./config.lua;
 }

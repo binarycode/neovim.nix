@@ -26,8 +26,11 @@ do
   -- enable modeline
   vim.opt.modeline = true
 
-  -- redraw only when needed
-  vim.opt.lazyredraw = true
+  -- ignore case in search patterns
+  vim.opt.ignorecase = true
+
+  -- override ignorecase if search pattern has upper case characters
+  vim.opt.smartcase = true
 
   -- make whitespace visible
   vim.opt.list = false

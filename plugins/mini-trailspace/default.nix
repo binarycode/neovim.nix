@@ -1,3 +1,7 @@
-{
-  plugins.mini-trailspace.enable = true;
+{pkgs, ...}: {
+  extraPlugins = [
+    pkgs.vimPlugins.mini-trailspace
+  ];
+
+  extraConfigLua = builtins.readFile ./config.lua;
 }

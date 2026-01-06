@@ -1,9 +1,6 @@
 {pkgs, ...}: {
   extraPlugins = [
-    {
-      plugin = pkgs.vimPlugins.fidget-nvim;
-      optional = true;
-    }
+    pkgs.vimPlugins.hlchunk-nvim
   ];
 
   extraConfigLua = builtins.readFile ./config.lua;

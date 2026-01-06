@@ -1,19 +1,19 @@
 {
   imports = [
     ./plugins/cmp
-    ./plugins/fidget
     ./plugins/flash
     ./plugins/fugitive
+    ./plugins/fzf-lua
     ./plugins/gitsigns
+    ./plugins/hlchunk
     ./plugins/lspconfig
     ./plugins/lualine
-    ./plugins/mini-indentscope
+    ./plugins/mini-clue
     ./plugins/mini-surround
     ./plugins/mini-trailspace
-    ./plugins/nvim-hlslens
+    ./plugins/noice
+    ./plugins/nvim-notify
     ./plugins/oil
-    ./plugins/repeat
-    ./plugins/telescope
     ./plugins/treesitter
 
     ./config/tab-navigation

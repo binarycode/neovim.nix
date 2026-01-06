@@ -1,7 +1,7 @@
 {pkgs, ...}: {
   extraPlugins = [
     {
-      plugin = pkgs.vimPlugins.telescope-nvim;
+      plugin = pkgs.vimPlugins.fzf-lua;
       optional = true;
     }
   ];

@@ -1,11 +1,7 @@
 {pkgs, ...}: {
   extraPlugins = [
     {
-      plugin = pkgs.vimPlugins.noice-nvim;
-      optional = true;
-    }
-    {
-      plugin = pkgs.vimPlugins.nui-nvim;
+      plugin = pkgs.vimPlugins.neoscroll-nvim;
       optional = true;
     }
   ];

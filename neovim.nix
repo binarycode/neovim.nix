@@ -16,6 +16,7 @@
     ./plugins/mini-surround
     ./plugins/mini-trailspace
     ./plugins/monokai-nightasty
+    ./plugins/neoscroll-nvim
     ./plugins/noice-nvim
     ./plugins/nvim-cmp
     ./plugins/nvim-lspconfig

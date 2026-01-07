@@ -1,4 +1,7 @@
 if not vim.g.vscode then
+  vim.cmd.packadd("noice.nvim")
+  vim.cmd.packadd("nui.nvim")
+
   require("noice").setup({
     views = {
       notify = {

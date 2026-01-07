@@ -1,7 +1,7 @@
 do
-  local miniclue = require("mini.clue")
+  local plugin = require("mini.clue")
 
-  miniclue.setup({
+  plugin.setup({
     triggers = {
       { mode = "n", keys = "<Leader>" },
       { mode = "x", keys = "<Leader>" },
@@ -23,13 +23,13 @@ do
       { mode = "x", keys = "z" },
     },
     clues = {
-      miniclue.gen_clues.square_brackets(),
-      miniclue.gen_clues.builtin_completion(),
-      miniclue.gen_clues.g(),
-      miniclue.gen_clues.marks(),
-      miniclue.gen_clues.registers(),
-      miniclue.gen_clues.windows(),
-      miniclue.gen_clues.z(),
+      plugin.gen_clues.square_brackets(),
+      plugin.gen_clues.builtin_completion(),
+      plugin.gen_clues.g(),
+      plugin.gen_clues.marks(),
+      plugin.gen_clues.registers(),
+      plugin.gen_clues.windows(),
+      plugin.gen_clues.z(),
     },
     window = {
       config = {

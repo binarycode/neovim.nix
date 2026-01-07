@@ -1,7 +1,5 @@
 do
-  local minisurround = require("mini.surround")
-
-  minisurround.setup({
+  require("mini.surround").setup({
     mappings = {
       add = "<Leader>sa", -- Add surrounding in Normal and Visual modes
       delete = "<Leader>sd", -- Delete surrounding

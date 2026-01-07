@@ -1,7 +1,7 @@
 do
-  local flash = require("flash")
+  local plugin = require("flash")
 
-  flash.setup({
+  plugin.setup({
     jump = {
       autojump = true,
     },
@@ -12,7 +12,7 @@ do
     },
   })
 
-  vim.keymap.set({ "n", "x", "o" }, "s", flash.jump, {
+  vim.keymap.set({ "n", "x", "o" }, "s", plugin.jump, {
     silent = true,
     desc = "Jump",
   })
@@ -26,13 +26,13 @@ do
       }
     end
 
-    flash.jump({
+    plugin.jump({
       search = { mode = "search" },
       label = { after = false, before = { 0, 0 }, uppercase = false, format = format },
       pattern = [[\<]],
       action = function(match, state)
         state:hide()
-        flash.jump({
+        plugin.jump({
           search = { max_length = 0 },
           highlight = { matches = false },
           label = { format = format },
@@ -72,7 +72,7 @@ do
   })
 
   local function jump_to_line()
-    flash.jump({
+    plugin.jump({
       search = { mode = "search", max_length = 0 },
       label = { after = { 0, 0 } },
       pattern = "^",
@@ -90,12 +90,12 @@ do
     desc = "Jump to line (DEPRECATED)",
   })
 
-  vim.keymap.set("o", "r", flash.remote, {
+  vim.keymap.set("o", "r", plugin.remote, {
     silent = true,
     desc = "Remote Flash",
   })
 
-  vim.keymap.set({ "o", "x" }, "R", flash.treesitter_search, {
+  vim.keymap.set({ "o", "x" }, "R", plugin.treesitter_search, {
     silent = true,
     desc = "Treesitter Search",
   })

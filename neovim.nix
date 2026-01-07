@@ -1,28 +1,31 @@
 {
   imports = [
-    ./plugins/cmp
-    ./plugins/flash
-    ./plugins/fugitive
+    ./config
+
+    ./filetypes
+
+    ./plugins/custom-menu
+    ./plugins/flash-nvim
     ./plugins/fzf-lua
-    ./plugins/gitsigns
-    ./plugins/hlchunk
-    ./plugins/lspconfig
-    ./plugins/lualine
+    ./plugins/gitsigns-nvim
+    ./plugins/hlchunk-nvim
+    ./plugins/lualine-nvim
+    # ./plugins/lz-n
+    # ./plugins/mini-basics
     ./plugins/mini-clue
     ./plugins/mini-surround
     ./plugins/mini-trailspace
-    ./plugins/noice
-    ./plugins/nvim-notify
-    ./plugins/oil
-    ./plugins/treesitter
-
-    ./config/tab-navigation
-    ./config/lsp
-    ./config/filetypes
-    ./config/custom-menu
-    ./config/base
-
     ./plugins/monokai-nightasty
+    ./plugins/noice-nvim
+    ./plugins/nvim-cmp
+    ./plugins/nvim-lspconfig
+    ./plugins/nvim-notify
+    ./plugins/nvim-treesitter
+    ./plugins/oil-nvim
+    ./plugins/tab-navigation
+    ./plugins/vim-fugitive
+
     ./plugins/lz-n
+    ./plugins/mini-basics
   ];
 }

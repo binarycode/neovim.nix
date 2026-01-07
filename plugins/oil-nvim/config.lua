@@ -1,9 +1,9 @@
 if not vim.g.vscode then
   vim.cmd.packadd("oil.nvim")
 
-  local oil = require("oil")
+  local plugin = require("oil")
 
-  oil.setup({
+  plugin.setup({
     keymaps = {
       ["l"] = "actions.select",
       ["<CR>"] = "actions.select",
@@ -19,5 +19,5 @@ if not vim.g.vscode then
     use_default_keymaps = false,
   })
 
-  vim.keymap.set("n", "-", oil.open)
+  vim.keymap.set("n", "-", plugin.open)
 end

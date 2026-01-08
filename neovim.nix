@@ -4,6 +4,7 @@
 
     ./filetypes
 
+    ./plugins/bufferline-nvim
     ./plugins/custom-menu
     ./plugins/flash-nvim
     ./plugins/fzf-lua

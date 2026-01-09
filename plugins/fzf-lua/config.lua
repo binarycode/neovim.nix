@@ -9,7 +9,7 @@ if not vim.g.vscode then
   })
   vim.keymap.set("n", "<Leader>o", function()
     vim.notify("<Leader>o is deprecated", "warn")
-    plugin.files()
+    vim.defer_fn(plugin.files, 2000)
   end, {
     silent = true,
     desc = "Jump to file (DEPRECATED)",

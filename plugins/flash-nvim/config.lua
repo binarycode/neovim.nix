@@ -65,7 +65,7 @@ do
   })
   vim.keymap.set({ "n", "x", "o" }, "<Leader>w", function()
     vim.notify("<Leader>w is deprecated", "warn")
-    jump_to_word()
+    vim.defer_fn(jump_to_word, 2000)
   end, {
     silent = true,
     desc = "Jump to word (DEPRECATED)",
@@ -84,7 +84,7 @@ do
   })
   vim.keymap.set({ "n", "x", "o" }, "<Leader>l", function()
     vim.notify("<Leader>l is deprecated", "warn")
-    jump_to_line()
+    vim.defer_fn(jump_to_line, 2000)
   end, {
     silent = true,
     desc = "Jump to line (DEPRECATED)",

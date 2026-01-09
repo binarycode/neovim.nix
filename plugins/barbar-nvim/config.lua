@@ -17,7 +17,7 @@ do
     silent = true,
     desc = "Pin buffer",
   })
-  vim.keymap.set("n", "<Leader>tj", "<Cmd>BufferPick<CR>", {
+  vim.keymap.set("n", "<Leader>tt", "<Cmd>BufferPick<CR>", {
     silent = true,
     desc = "Jump to buffer",
   })

@@ -3,6 +3,11 @@ if not vim.g.vscode then
   vim.cmd.packadd("cmp-nvim-lsp")
   vim.cmd.packadd("cmp-buffer")
   vim.cmd.packadd("cmp-path")
+  vim.cmd.packadd("friendly-snippets")
+  vim.cmd.packadd("luasnip")
+  vim.cmd.packadd("cmp_luasnip")
+
+  require("luasnip.loaders.from_vscode").lazy_load()
 
   local plugin = require("cmp")
 
@@ -11,7 +16,13 @@ if not vim.g.vscode then
       { name = "nvim_lsp" },
       { name = "buffer" },
       { name = "path" },
+      { name = "luasnip" },
     }),
+    snippet = {
+      expand = function(args)
+        require('luasnip').lsp_expand(args.body)
+      end
+    },
     mapping = plugin.mapping.preset.insert({
       ["<C-b>"] = plugin.mapping.scroll_docs(-4),
       ["<C-f>"] = plugin.mapping.scroll_docs(4),

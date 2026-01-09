@@ -12,7 +12,7 @@ do
   vim.opt.smarttab = true
 
   -- cursor line stays centered
-  vim.opt.scrolloff = 999
+  vim.opt.scrolloff = 10
 
   -- single statusline for all windows
   vim.opt.laststatus = 3

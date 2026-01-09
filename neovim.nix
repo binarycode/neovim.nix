@@ -4,7 +4,7 @@
 
     ./filetypes
 
-    ./plugins/bufferline-nvim
+    ./plugins/barbar-nvim
     ./plugins/custom-menu
     ./plugins/flash-nvim
     ./plugins/fzf-lua
@@ -24,7 +24,6 @@
     ./plugins/nvim-notify
     ./plugins/nvim-treesitter
     ./plugins/oil-nvim
-    ./plugins/tab-navigation
     ./plugins/vim-fugitive
 
     ./plugins/lz-n

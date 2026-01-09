@@ -1,7 +1,7 @@
 {pkgs, ...}: {
   extraPlugins = [
     {
-      plugin = pkgs.vimPlugins.bufferline-nvim;
+      plugin = pkgs.vimPlugins.barbar-nvim;
       optional = true;
     }
   ];

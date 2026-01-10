@@ -20,8 +20,8 @@ if not vim.g.vscode then
     }),
     snippet = {
       expand = function(args)
-        require('luasnip').lsp_expand(args.body)
-      end
+        require("luasnip").lsp_expand(args.body)
+      end,
     },
     mapping = plugin.mapping.preset.insert({
       ["<C-b>"] = plugin.mapping.scroll_docs(-4),

@@ -1,9 +1,7 @@
-{
-  plugins.treesitter = {
-    enable = true;
-    settings = {
-      highlight.enable = true;
-      indent.enable = true;
-    };
-  };
+{pkgs, ...}: {
+  extraPlugins = [
+    pkgs.vimPlugins.nvim-treesitter.withAllGrammars
+  ];
+
+  extraConfigLua = builtins.readFile ./config.lua;
 }

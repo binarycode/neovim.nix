@@ -11,7 +11,6 @@
     ./plugins/gitsigns-nvim
     ./plugins/hlchunk-nvim
     ./plugins/lualine-nvim
-    # ./plugins/lz-n
     # ./plugins/mini-basics
     ./plugins/mini-clue
     ./plugins/mini-surround
@@ -25,9 +24,7 @@
     ./plugins/nvim-notify
     ./plugins/nvim-treesitter
     ./plugins/oil-nvim
-    ./plugins/vim-fugitive
 
-    ./plugins/lz-n
     ./plugins/mini-basics
   ];
 }

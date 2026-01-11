@@ -1,6 +1,0 @@
-{
-  imports = [
-    ./golang
-    ./helm
-  ];
-}

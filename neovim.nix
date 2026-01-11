@@ -1,30 +1,19 @@
 {
-  imports = [
-    ./config
+  pkgs,
+  inputs,
+}: let
+  modules =
+    builtins.map (path: import path {inherit pkgs inputs;})
+    (pkgs.lib.filter (path: builtins.baseNameOf path == "default.nix")
+      (pkgs.lib.filesystem.listFilesRecursive ./modules));
 
-    ./filetypes
+  plugins = pkgs.lib.map (plugin: {
+    plugin = plugin;
+    optional = true;
+  }) (pkgs.lib.catAttrs "plugin" modules);
 
-    ./plugins/barbar-nvim
-    ./plugins/custom-menu
-    ./plugins/flash-nvim
-    ./plugins/fzf-lua
-    ./plugins/gitsigns-nvim
-    ./plugins/hlchunk-nvim
-    ./plugins/lualine-nvim
-    # ./plugins/mini-basics
-    ./plugins/mini-clue
-    ./plugins/mini-surround
-    ./plugins/mini-trailspace
-    ./plugins/monokai-nightasty
-    ./plugins/neogit
-    ./plugins/neoscroll-nvim
-    ./plugins/noice-nvim
-    ./plugins/nvim-cmp
-    ./plugins/nvim-lspconfig
-    ./plugins/nvim-notify
-    ./plugins/nvim-treesitter
-    ./plugins/oil-nvim
-
-    ./plugins/mini-basics
-  ];
-}
+  luaRcContent = builtins.concatStringsSep "\n\n" (pkgs.lib.catAttrs "config" modules);
+in
+  pkgs.wrapNeovimUnstable pkgs.neovim-unwrapped {
+    inherit plugins luaRcContent;
+  }

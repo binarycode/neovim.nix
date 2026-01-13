@@ -12,7 +12,7 @@ do
   vim.opt.smarttab = true
 
   -- cursor line stays centered
-  vim.opt.scrolloff = 10
+  vim.opt.scrolloff = 9999
 
   -- single statusline for all windows
   vim.opt.laststatus = 3
@@ -25,4 +25,8 @@ do
 
   -- hide search highlight on escape
   vim.keymap.set("n", "<Esc>", vim.cmd.nohlsearch, { silent = true })
+
+  -- quick page scrolling
+  vim.keymap.set("n", "<C-j>", "<PageDown>", { silent = true })
+  vim.keymap.set("n", "<C-k>", "<PageUp>", { silent = true })
 end

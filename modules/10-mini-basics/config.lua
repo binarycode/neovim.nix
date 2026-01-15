@@ -6,7 +6,7 @@ do
       extra_ui = true,
     },
     mappings = {
-      option_toggle_prefix = "",
+      option_toggle_prefix = "<Leader>`",
     },
   })
 end

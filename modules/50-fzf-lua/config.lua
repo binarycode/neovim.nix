@@ -27,10 +27,9 @@ if not vim.g.vscode then
       actions = {
         ["default"] = function(selected)
           if selected and selected[1] then
-            local path = selected[1]
             plugin.live_grep({
-              cwd = path,
-              prompt = "Search in: " .. path .. " > ",
+              cwd = selected[1],
+              prompt = "Search in directory: > ",
             })
           end
         end,

@@ -7,11 +7,6 @@ do
     jump = {
       autojump = true,
     },
-    modes = {
-      char = {
-        jump_labels = true,
-      },
-    },
   })
 
   vim.keymap.set({ "n", "x", "o" }, "s", plugin.jump, {

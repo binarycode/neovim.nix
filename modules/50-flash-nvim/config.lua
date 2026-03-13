@@ -14,7 +14,7 @@ do
     desc = "Jump",
   })
 
-  local function jump_to_word()
+  vim.keymap.set({ "n", "x", "o" }, "<Leader>jw", function()
     local function format(opts)
       -- always show first and second label
       return {
@@ -55,40 +55,20 @@ do
         end
       end,
     })
-  end
-
-  vim.keymap.set({ "n", "x", "o" }, "<Leader>jw", jump_to_word, {
+  end, {
     silent = true,
     desc = "Jump to word",
   })
 
-  vim.keymap.set({ "n", "x", "o" }, "<Leader>w", function()
-    vim.notify("<Leader>w is deprecated", "warn")
-    vim.defer_fn(jump_to_word, 2000)
-  end, {
-    silent = true,
-    desc = "Jump to word (DEPRECATED)",
-  })
-
-  local function jump_to_line()
+  vim.keymap.set({ "n", "x", "o" }, "<Leader>jl", function()
     plugin.jump({
       search = { mode = "search", max_length = 0 },
       label = { after = { 0, 0 } },
       pattern = "^",
     })
-  end
-
-  vim.keymap.set({ "n", "x", "o" }, "<Leader>jl", jump_to_line, {
-    silent = true,
-    desc = "Jump to line",
-  })
-
-  vim.keymap.set({ "n", "x", "o" }, "<Leader>l", function()
-    vim.notify("<Leader>l is deprecated", "warn")
-    vim.defer_fn(jump_to_line, 2000)
   end, {
     silent = true,
-    desc = "Jump to line (DEPRECATED)",
+    desc = "Jump to line",
   })
 
   vim.keymap.set("o", "r", plugin.remote, {

@@ -21,7 +21,7 @@ jobs:
     timeout-minutes: 15
     steps:
       - name: Checkout code
-        uses: actions/checkout@v6.0.1
+        uses: actions/checkout@v6
 
       - name: Install Devbox
         uses: jetify-com/devbox-install-action@v0.14.0

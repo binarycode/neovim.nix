@@ -1,6 +1,6 @@
 on-unmatched = "fatal"
 
-excludes = [".gitignore", "devbox.lock", "flake.lock"]
+excludes = [".gitignore", "devbox.lock", "flake.lock", "LICENSE"]
 
 [formatter.alejandra]
 command = "alejandra"

@@ -1,13 +1,35 @@
 name: CI
+
 on:
   push:
     branches:
       - master
   pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
 jobs:
-  test:
+  ci:
+    name: Build and Test
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
-      - uses: actions/checkout@v4
-      - uses: cachix/install-nix-action@v27
-      - run: "nix flake check"
+      - name: Checkout code
+        uses: actions/checkout@v6.0.1
+
+      - name: Install Devbox
+        uses: jetify-com/devbox-install-action@v0.14.0
+        with:
+          enable-cache: true
+
+      - name: Run formatting check
+        run: devbox run -- just fmt
+
+      - name: Run check
+        run: devbox run -- just check

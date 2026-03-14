@@ -13,7 +13,7 @@ includes = ["justfile"]
 [formatter.prettier]
 command = "prettier"
 options = ["--write", "--no-bracket-spacing"]
-includes = ["*.json", "*.yaml"]
+includes = ["*.json", "*.md", "*.yaml"]
 
 [formatter.shfmt]
 command = "shfmt"

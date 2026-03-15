@@ -9,13 +9,8 @@ do
     },
   })
 
-  ---@class Flash.Match.TwoLabel: Flash.Match
-  ---@field label1 string
-  ---@field label2 string
-
-  ---@param opts Flash.Format
   local function format(opts)
-    ---@cast opts {match: Flash.Match.TwoLabel}
+    ---@cast opts {match: {label1: string, label2: string}}
     return {
       { opts.match.label1, "FlashMatch" },
       { opts.match.label2, "FlashLabel" },
@@ -36,18 +31,18 @@ do
               return m.label == match.label and m.win == win
             end, state.results)
           end,
-          ---@param matches Flash.Match.TwoLabel[]
           labeler = function(matches)
             for _, m in ipairs(matches) do
+              ---@cast m {label: string|false, label2: string}
               m.label = m.label2
             end
           end,
         })
       end,
-      ---@param matches Flash.Match.TwoLabel[]
       labeler = function(matches, state)
         local labels = state:labels()
         for m, match in ipairs(matches) do
+          ---@cast match {label: string|false, label1: string, label2: string}
           match.label1 = labels[math.floor((m - 1) / #labels) + 1]
           match.label2 = labels[(m - 1) % #labels + 1]
           match.label = match.label1

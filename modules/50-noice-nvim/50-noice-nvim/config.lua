@@ -9,7 +9,7 @@ if not vim.g.vscode then
     },
     lsp = {
       progress = {
-        view = "notify",
+        view = "mini",
       },
       -- override markdown rendering so that **cmp** and other plugins use **Treesitter**
       override = {
@@ -33,6 +33,10 @@ if not vim.g.vscode then
             { find = "written" },
           },
         },
+        view = "mini",
+      },
+      {
+        filter = { event = "notify" },
         view = "mini",
       },
     },

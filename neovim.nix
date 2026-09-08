@@ -17,5 +17,14 @@
   }) (pkgs.lib.catAttrs "plugin" modules);
 in
   pkgs.wrapNeovimUnstable pkgs.neovim-unwrapped {
-    inherit extraPackages luaRcContent plugins;
+    inherit luaRcContent plugins;
+
+    # `wrapNeovimUnstable` takes no `extraPackages`; runtime dependencies that
+    # nixpkgs does not already declare on a plugin have to go on PATH by hand.
+    wrapperArgs = pkgs.lib.optionals (extraPackages != []) [
+      "--suffix"
+      "PATH"
+      ":"
+      (pkgs.lib.makeBinPath extraPackages)
+    ];
   }

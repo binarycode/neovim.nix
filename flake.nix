@@ -5,7 +5,7 @@
       url = "github:hercules-ci/flake-parts";
     };
 
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-25.11";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-26.05";
 
     plugin-monokai-nightasty = {
       flake = false;
@@ -19,7 +19,16 @@
     inputs.flake-parts.lib.mkFlake {inherit inputs;} {
       systems = import inputs.systems;
 
-      perSystem = {pkgs, ...}: {
+      perSystem = {
+        config,
+        pkgs,
+        ...
+      }: {
+        checks.smoke = import ./checks {
+          inherit pkgs;
+          inherit (config.packages) neovim;
+        };
+
         packages = rec {
           default = neovim;
           neovim = import ./neovim.nix {inherit inputs pkgs;};

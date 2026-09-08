@@ -7,11 +7,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1765835352,
-        "narHash": "sha256-XswHlK/Qtjasvhd1nOa1e8MgZ8GS//jBoTqWtrS1Giw=",
+        "lastModified": 1788450739,
+        "narHash": "sha256-glZLQlzIn1fXH6PazR2iUmTo7kzzyYSshrWhLS9TqCU=",
         "owner": "hercules-ci",
         "repo": "flake-parts",
-        "rev": "a34fae9c08a15ad73f295041fec82323541400a9",
+        "rev": "31729ca8cbdb4fa927b34e5f4353e6a83f39e993",
         "type": "github"
       },
       "original": {
@@ -22,16 +22,16 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1766736597,
-        "narHash": "sha256-BASnpCLodmgiVn0M1MU2Pqyoz0aHwar/0qLkp7CjvSQ=",
+        "lastModified": 1788807765,
+        "narHash": "sha256-J9oC0bKnkXUrMegqRTXVkyDFJ0gn2U/Qpoo9HgGMQmA=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "f560ccec6b1116b22e6ed15f4c510997d99d5852",
+        "rev": "93108a538f079596c9a16c72cf03e9322782b6dd",
         "type": "github"
       },
       "original": {
         "owner": "nixos",
-        "ref": "nixos-25.11",
+        "ref": "nixos-26.05",
         "repo": "nixpkgs",
         "type": "github"
       }
@@ -39,11 +39,11 @@
     "plugin-monokai-nightasty": {
       "flake": false,
       "locked": {
-        "lastModified": 1765751144,
-        "narHash": "sha256-LFhbeQeDlETtVyr4qx1XNImR7/GS8DoKWOp6B+Udx/8=",
+        "lastModified": 1784236132,
+        "narHash": "sha256-HgZDr/khOoztV7astyBIW2Ut2g4h9IUgS9hCwDYLLII=",
         "owner": "polirritmico",
         "repo": "monokai-nightasty.nvim",
-        "rev": "8be5e1c6e1d59873505e81b161e923264dfa5c1a",
+        "rev": "5731bc3c01e6c94a709021e5ee31070840e47584",
         "type": "github"
       },
       "original": {
